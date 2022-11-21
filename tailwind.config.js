@@ -1,8 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    './dist/**/*.{html,js}',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "circle-peach": "#ffd8b7"
+      },
+      spacing: {
+        "40rem": "40rem",
+        "50rem": "50rem",
+        "1500px": "1500px"
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    ({ addVariant }) => {
+      addVariant("child", "& > *");
+    }
+  ],
 }
