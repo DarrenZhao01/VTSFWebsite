@@ -9,7 +9,7 @@ module.exports = {
         "circle-peach": "#ffd8b7"
       },
       spacing: {
-        "40rem": "40rem",
+        "30rem": "30rem",
         "50rem": "50rem",
         "1500px": "1500px"
       }
