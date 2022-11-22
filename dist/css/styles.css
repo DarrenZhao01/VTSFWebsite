@@ -525,8 +525,8 @@ video {
   top: -30rem;
 }
 
-.-left-50rem {
-  left: -50rem;
+.-left-60rem {
+  left: -60rem;
 }
 
 .-z-10 {
@@ -541,8 +541,9 @@ video {
   float: left;
 }
 
-.mr-4 {
-  margin-right: 1rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mt-3 {
@@ -553,12 +554,70 @@ video {
   margin-left: 0.75rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-40 {
+  margin-left: 10rem;
+}
+
+.ml-9 {
+  margin-left: 2.25rem;
+}
+
+.ml-96 {
+  margin-left: 24rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-1500px {
   height: 1500px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-3\/5 {
   width: 60%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-1500px {
@@ -567,6 +626,26 @@ video {
 
 .list-none {
   list-style-type: none;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-full {
@@ -590,6 +669,10 @@ video {
   padding-top: 4rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -609,6 +692,10 @@ video {
   font-weight: 600;
 }
 
+.child\:m-auto > * {
+  margin: auto;
+}
+
 .child\:mx-2 > * {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -616,4 +703,35 @@ video {
 
 .child\:inline > * {
   display: inline;
+}
+
+.child\:rounded-md > * {
+  border-radius: 0.375rem;
+}
+
+.child\:rounded-lg > * {
+  border-radius: 0.5rem;
+}
+
+.child\:rounded-full > * {
+  border-radius: 9999px;
+}
+
+.child\:bg-red-700 > * {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.child\:bg-button-red > * {
+  --tw-bg-opacity: 1;
+  background-color: rgb(152 10 0 / var(--tw-bg-opacity));
+}
+
+.child\:p-5 > * {
+  padding: 1.25rem;
+}
+
+.child\:text-white > * {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }

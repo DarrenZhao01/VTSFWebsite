@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang="en-us">
+<html lang="en-us" class="w-full h-full">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/styles.css">
     </head>
-    <body class="relative z-1">
+    <body class="relative z-1 w-full h-full overflow-x-hidden">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -20,6 +20,11 @@
         <div>
             <div>
                 <nav>
+                    <div class="float-left mt-3 ml-3">
+                        <a href="#">
+                            <img class="w-3/5" src="./assets/logo.png">
+                        </a>
+                    </div>
                     <div class="float-right mr-4 mt-3">
                         <ul class="list-none child:inline child:mx-2 text-xl">
                             <li>
@@ -44,11 +49,6 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="float-left mt-3 ml-3">
-                        <a href="#">
-                            <img class="w-3/5" src="./assets/logo.png">
-                        </a>
-                    </div>
                 </nav>
             </div>
 
@@ -64,9 +64,15 @@
                             students.
                         </div>
                     </div>
+                    <div class="flex ml-96 mr-auto mt-10 child:p-5 child:bg-button-red child:text-white child:rounded-full child:m-auto">
+                        <button>Enroll as Student</button>
+                        <button>Enroll as Tutor</button>
+                    </div>
                 </div>
 
-                <div class="-z-10 absolute rounded-full w-1500px h-1500px -top-30rem -left-50rem bg-circle-peach"></div>
+                <div class="-z-10 w-fit h-fit absolute -top-30rem -left-60rem">
+                    <div class="rounded-full w-1500px h-1500px bg-circle-peach"></div>
+                </div>
             </main>
         </div>
     </body>

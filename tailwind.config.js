@@ -1,16 +1,17 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 module.exports = {
   content: [
-    './dist/**/*.{html,js}',
+    "./dist/**/*.{html,js}",
   ],
   theme: {
     extend: {
       colors: {
-        "circle-peach": "#ffd8b7"
+        "circle-peach": "#ffd8b7",
+        "button-red": "#980A00"
       },
       spacing: {
         "30rem": "30rem",
-        "50rem": "50rem",
+        "60rem": "60rem",
         "1500px": "1500px"
       }
     },
