@@ -578,44 +578,16 @@ video {
   background-color: rgb(255 216 183 / var(--tw-bg-opacity));
 }
 
-.pt-36 {
-  padding-top: 9rem;
-}
-
-.pl-36 {
-  padding-left: 9rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
-}
-
-.pl-32 {
-  padding-left: 8rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pt-44 {
   padding-top: 11rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
 }
 
 .pl-24 {
   padding-left: 6rem;
 }
 
-.pt-1 {
-  padding-top: 0.25rem;
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-xl {
