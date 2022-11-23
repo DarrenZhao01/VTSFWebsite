@@ -25,14 +25,20 @@
     align-items: space-evenly;
 }
 .box{
+    display:block;
     background-color:rgb(241, 197, 144);
     width: 30vw;
-    padding:50%;
+    height: 40vh;
+    padding: 20%;
     border-radius:10px;
     color:rgb(0, 0, 0);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
     font-family:sans-serif;
     }
+.h2{
+    font-size: 2.2em;
+    font-weight: 700;
+}
+.class-title{
+    font-size:30px;
+    height: fit-content;
+}
