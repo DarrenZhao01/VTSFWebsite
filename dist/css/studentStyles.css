@@ -21,14 +21,14 @@
     grid-column-gap: 10vw;
     justify-items: center;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: top;
     align-items: space-evenly;
 }
 .box{
     display:block;
     background-color:rgb(241, 197, 144);
     width: 30vw;
-    height: 40vh;
+    height: 100%;
     padding: 20%;
     border-radius:15px;
     color:rgb(0, 0, 0);
@@ -66,10 +66,9 @@
     align-items: center;
     margin: auto;
     margin-top: 3vh;
-    min-width: 900px;
-    width: 68vw;
+    width: 70vw;
     font-size: 1.2em;
-    padding: 25px 15px 25px 15px;
+    padding: 25px 25px 25px 25px;
     background-color: rgb(233, 219, 195);
     border-radius: 25px;
     height: fit-content;
@@ -105,4 +104,58 @@
     margin-top: 5%;
     width: 100%;
     font-size: 60px;
+}
+
+.topic{
+    display: none;    
+}
+
+.header-3{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-weight: 400;
+}
+
+@media all and (max-width: 575px) {
+    .summary{
+        display: block;
+        margin: 0;
+        margin-top: 20px;
+        min-width: 0;
+        width: 100%;
+        border-radius: 0;
+        /* border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; */
+        
+    }
+    .container{
+        display: block;
+        margin: none;
+    }
+    .blue-column{
+        display: none;
+    }
+    .box{
+        width: 100%;
+        padding: 40px;
+        margin-bottom: 20px;
+    }
+    #right-column{
+        display: none;
+    }
+    .h2{
+        display: none;
+    }
+    .topic{
+        display: inline-block;
+    }
+    .header-extend{
+        border-radius: 0;
+    }
+    .header-2{
+        margin-top: 60px;
+    }
+
 }
