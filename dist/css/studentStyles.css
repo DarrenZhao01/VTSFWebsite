@@ -48,6 +48,7 @@
     align-items: center;
     margin: auto;
     margin-top: 2vh;
+    margin-bottom: 6vh;
     width: -moz-fit-content;
     width: fit-content;
     padding: 10px 20px 10px 20px;
@@ -116,6 +117,16 @@
     margin-top: 10vh;
     margin-bottom: 10vh;
     font-weight: 400;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#priorites{
+    font-size: 25px;
 }
 
 @media all and (max-width: 575px) {
