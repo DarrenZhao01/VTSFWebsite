@@ -129,6 +129,21 @@
     font-size: 25px;
 }
 
+#m1{
+    max-width: 8vw;
+    margin-bottom: 5%;
+}
+
+#m2{
+    max-width: 7vw;
+    margin-bottom: 5%;
+}
+
+#m3{
+    max-width: 7vw;
+    margin-bottom: 5%;
+}
+
 @media all and (max-width: 575px) {
     .summary{
         display: block;
