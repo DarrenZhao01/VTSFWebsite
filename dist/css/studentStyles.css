@@ -1,4 +1,10 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
 .header{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +19,6 @@
     margin-top: 7vh;
     width:100%;
     height:auto;
-    background-color:#fff;
     display:grid;
     grid-template-columns: 200px 200px;
     grid-row: auto auto auto;
@@ -47,12 +52,12 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 2vh;
+    margin-top: 4vh;
     margin-bottom: 6vh;
     width: -moz-fit-content;
     width: fit-content;
     padding: 10px 20px 10px 20px;
-    font-size: 25px;
+    font-size: 23px;
     background-color:rgb(43, 146, 43);
     border-radius: 10px;
     color: white;
@@ -72,7 +77,7 @@
     padding: 25px 25px 25px 25px;
     background-color: rgb(233, 219, 195);
     border-radius: 25px;
-    height: fit-content;
+    height: 100%;
 }
 
 .row {
@@ -98,6 +103,7 @@
   }
   
 .header-2{
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +150,31 @@
     margin-bottom: 5%;
 }
 
+#m4{
+    max-width: 3.5vw;
+    margin-bottom: 5%;
+    margin-left: -2%;
+}
+
+#m5{
+    max-width: 3.5vw;
+    margin-bottom: 5%;
+}
+#wave{
+    z-index: -3;
+    position: absolute;
+}
+
 @media all and (max-width: 575px) {
+    #wave{
+        height: 300px;
+    }
+    .header{
+        font-size: 45px;
+    }
+    .title-group{
+        margin-left: 10px;
+    }
     .summary{
         display: block;
         margin: 0;
@@ -174,6 +204,9 @@
     .h2{
         display: none;
     }
+    .header-2{
+        font-size: 50px;
+    }
     .topic{
         display: inline-block;
     }
@@ -182,6 +215,12 @@
     }
     .header-2{
         margin-top: 60px;
+    }
+    #m1, #m2, #m3{
+        max-width: 13vh;
+    }
+    #m4, #m5{
+        max-width: 7vh;
     }
 
 }
