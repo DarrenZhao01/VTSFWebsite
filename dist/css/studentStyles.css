@@ -167,7 +167,7 @@ body{
 
 @media all and (max-width: 575px) {
     #wave{
-        height: 300px;
+        display: none;
     }
     .header{
         font-size: 45px;
