@@ -101,6 +101,8 @@ body{
     align-items: center;
     font-size: 40px;
     height: 100%;
+    margin-left: 20px;
+    margin-right: 30px;
   }
   
 .header-2{
@@ -179,6 +181,12 @@ iframe{
     display: none;
 }
 
+.topicsE{
+    color: rgb(61, 104, 137);
+}
+.topicsM{
+    color: rgb(219, 95, 90);
+}
 
 @media all and (max-width: 575px) {
     .slider-container {
