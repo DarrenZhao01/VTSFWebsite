@@ -188,6 +188,18 @@ iframe{
     color: rgb(219, 95, 90);
 }
 
+.bulb{
+    margin-right: 2rem;
+}
+
+#attendance{
+    margin-top: 4rem;
+}
+
+.summary-titles{
+    display:none;
+}
+
 @media all and (max-width: 575px) {
     .slider-container {
         display: flex;
@@ -383,5 +395,14 @@ iframe{
     #extra{
         display: none;
     }
-
+    #attendance{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .summary-titles{
+        display: block;
+        margin-bottom: 2rem;
+        font-size: 30px;
+        font-weight: bold;
+    }
 }
