@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.big-number {
-    font-size: theme("fontSize.8xl") !important;
-    line-height: theme("fontSize.8xl") !important;
-}
-
 .subheading {
     font-weight: theme("fontWeight.medium") !important;
     font-size: theme("fontSize.5xl") !important;
