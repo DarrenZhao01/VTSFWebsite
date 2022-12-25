@@ -138,7 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col mx-auto mb-16 w-9/12">
+                    <div class="flex flex-col mx-auto w-9/12">
                         <h2 class="text-center subheading">Parent Reviews</h2>
                         <div class="flex flex-col child:flex child:mb-4 child:child:mx-2">
                             <div>
@@ -157,7 +157,7 @@
                     </div>
 
                     <div class="carousel-wrapper relative">
-                        <div class="carousel w-3/4">
+                        <div class="carousel w-3/4 max-h-[26rem]">
                             <img src="./assets/carousel/image1.jpg">
                             <img src="./assets/carousel/image2.jpg">
                             <img src="./assets/carousel/image3.jpg">
@@ -167,18 +167,34 @@
                             <img src="./assets/carousel/image7.jpg">
                             <img src="./assets/carousel/image8.jpg">
                         </div>
-                        <div class="bottom-icons flex absolute w-3/4 bottom-12 left-0 right-0 mx-auto justify-center items-center child:mx-2 child:bg-slate-500 child:w-12 child:h-4"></div>
+                        <div class="bottom-icons flex absolute w-3/4 bottom-[5%] left-0 right-0 mx-auto justify-center items-center child:mx-2 child:bg-slate-500 child:w-12 child:h-4"></div>
                     </div>
                 </div>
 
-                <div class="-z-10 w-fit h-fit absolute -top-30rem -left-40rem">
-                    <div class="rounded-full w-1500px h-1500px bg-circle-peach"></div>
+                <div>
+                    <div class="-z-10 w-fit h-fit absolute -top-30rem -left-40rem">
+                        <div class="rounded-full w-1500px h-1500px bg-circle-peach"></div>
+                    </div>
                 </div>
             </main>
 
-            <footer>
-                <div>
-                    footer
+            <footer class="w-full bg-lime-400 px-5 py-4 flex flex-wrap">
+                <div class="w-1/2 flex flex-wrap flex-col">
+                    <div class="font-semibold text-2xl">Main Menu</div>
+                    <div><a href="#">Home</a></div>
+                    <div><a href="#">Students</a></div>
+                    <div><a href="#">Contact</a></div>
+                    <div><a href="#">About</a></div>
+                    <div><a href="#">Tutors</a></div>
+                </div>
+                <div class="w-1/2 flex flex-col">
+                    <h3 class="font-semibold text-2xl mb-2">Socials</h3>
+                    <a href="#">
+                        <img class="w-8" src="./assets/instagram-logo.svg">
+                    </a>
+                </div>
+                <div class="w-full mt-6">
+                    © 2022 VirtualTutoringSF. All Rights Reserved
                 </div>
             </footer>
         </div>
