@@ -13,7 +13,13 @@ module.exports = {
         "30rem": "30rem",
         "40rem": "40rem",
         "1500px": "1500px"
-      }
+      },
+      listStyleType: {
+        "circle": "circle",
+      },
+      lineHeight: {
+        "0": "0rem",
+      },
     },
   },
   plugins: [

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.subheading {
+    font-weight: theme("fontWeight.medium") !important;
+    font-size: theme("fontSize.5xl") !important;
+    line-height: theme("fontSize.5xl") !important;
+    margin-bottom: theme("margin.5") !important;
+}
+
+.carousel-wrapper .carousel {
+    display: flex !important;
+    overflow: hidden !important;
+    flex-flow: row nowrap !important;
+    scroll-snap-type: x mandatory !important;
+    align-items: center !important; 
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.carousel-wrapper .carousel > * {
+    text-align: center !important;
+    flex: none !important;
+    object-fit: cover !important;
+    line-height: 50rem !important;
+    width: 100% !important;
+    height: fit-content !important;
+}
+
+.carousel-wrapper .bottom-icons > * {
+    transition: background-color 1s ease, transform 0.25s ease;
+}
+
+.carousel-wrapper .bottom-icons > *.selected {
+    background-color: black;
+    transition: background-color 1s ease;
+}
+
+.carousel-wrapper .bottom-icons > *:hover {
+    transition: transform 0.25s ease;
+    transform: scale(1.5);
+}
+
+.carousel-wrapper .carousel .scroll {
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.carousel-wrapper .carousel .fast-scroll {
+    animation-name: scroll;
+    animation-duration: 0.1s;
+    animation-play-state: running;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(-100%);
+    }
+}

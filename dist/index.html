@@ -10,7 +10,7 @@
         <title>Virtual Tutoring SF | Welcome</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body class="relative z-1 w-full h-full overflow-x-hidden">
         <!--[if lt IE 7]>
@@ -18,62 +18,187 @@
         <![endif]-->
 
         <div>
-            <div>
-                <nav>
-                    <div class="float-left mt-3 ml-3">
-                        <a href="#">
-                            <img class="w-3/5" src="./assets/logo.png">
-                        </a>
-                    </div>
-                    <div class="float-right mr-4 mt-3">
-                        <ul class="list-none child:inline child:mx-2 text-xl">
-                            <li>
-                                <a href="#">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Tutors</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Students</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>About</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <nav class="absolute flex w-full">
+                <div class="mt-3 ml-3">
+                    <a href="#">
+                        <img class="w-3/5" src="./assets/logo.png">
+                    </a>
+                </div>
+                <div class="ml-auto mr-4 mt-3">
+                    <ul class="list-none child:inline child:mx-2 text-xl">
+                        <li>
+                            <a href="#">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Tutors</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Students</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>About</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
             <main>
                 <div>
-                    <div class="pt-44 pl-24">
-                        <h1 class="text-6xl font-semibold">Welcome.</h1>
-                        <div class="text-5xl pt-16">
-                            Free online tutoring
-                            <br>
-                            for students by
-                            <br>
-                            students.
+                    <div class="flex mx-auto pt-32 w-9/12">
+                        <div class="w-1/2">
+                            <h1 class="text-6xl font-semibold">Welcome.</h1>
+                            <div class="text-5xl">
+                                <br>
+                                Free online tutoring
+                                <br>
+                                for students by
+                                <br>
+                                students.
+                            </div>
+                        </div>
+                        <div class="w-1/2 content-center">
+                            <img class="mx-auto" src="./assets/home-image.svg" onerror="this.src=''">
                         </div>
                     </div>
-                    <div class="flex ml-96 mr-auto mt-10 child:p-5 child:bg-button-red child:text-white child:rounded-full child:m-auto">
+
+                    <div class="flex mx-auto mt-10 child:p-6 child:bg-button-red child:text-white child:rounded-full child:m-auto">
                         <button>Enroll as Student</button>
                         <button>Enroll as Tutor</button>
                     </div>
+
+                    <div class="flex mx-auto my-16 w-9/12 child:mx-4">
+                        <div class="w-1/2 flex flex-col">
+                            <h2 class="self-center subheading">Fall Session!</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
+                        </div>
+                        <div class="w-1/2 flex flex-col items-center">
+                            <h2 class="subheading">Announcements</h2>
+                            <div>
+                                <img class="w-30rem" src="./assets/filler-tall.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col mx-auto mb-16 w-9/12">
+                        <h2 class="subheading">Our mission</h2>
+                        <div class="grid grid-cols-2 gap-7 child:flex child:child:mx-2">
+                            <div>
+                                <h3 class="select-none">◯</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
+                            </div>
+                            <div>
+                                <h3 class="select-none">◯</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
+                            </div>
+                            <div>
+                                <h3 class="select-none">◯</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
+                            </div>
+                            <div>
+                                <h3 class="select-none">◯</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap text-4xl mx-auto mb-16 w-9/12">
+                        <h2 class="w-full subheading text-center">So far we've:</h2>
+                        <div class="w-1/2 child:mx-4">
+                            <div>
+                                <img class="w-1/2 max-w-sm mx-auto" src="./assets/pencil.svg" onerror="this.src=''">
+                            </div>
+                            <div class="text-center">
+                                <p>Taught over</p>
+                                <div class="text-8xl">6500+</div>
+                                <p>classes</p>
+                            </div>
+                        </div>
+                        <div class="w-1/2 child:mx-4">
+                            <div>
+                                <img class="w-1/2 max-w-sm mx-auto" src="./assets/person.svg" onerror="this.src=''">
+                            </div>
+                            <div class="text-center">
+                                <p>Helped over</p>
+                                <div class="text-8xl">600+</div>
+                                <p>students</p>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="text-center">
+                                <p>with >99% satisfaction from parents</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col mx-auto w-9/12">
+                        <h2 class="text-center subheading">Parent Reviews</h2>
+                        <div class="flex flex-col child:flex child:mb-4 child:child:mx-2">
+                            <div>
+                                <h3 class="select-none">⬤</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
+                            </div>
+                            <div>
+                                <h3 class="select-none">⬤</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
+                            </div>
+                            <div>
+                                <h3 class="select-none">⬤</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-wrapper relative">
+                        <div class="carousel w-3/4 max-h-[26rem]">
+                            <img src="./assets/carousel/image1.jpg">
+                            <img src="./assets/carousel/image2.jpg">
+                            <img src="./assets/carousel/image3.jpg">
+                            <img src="./assets/carousel/image4.jpg">
+                            <img src="./assets/carousel/image5.jpg">
+                            <img src="./assets/carousel/image6.jpg">
+                            <img src="./assets/carousel/image7.jpg">
+                            <img src="./assets/carousel/image8.jpg">
+                        </div>
+                        <div class="bottom-icons flex absolute w-3/4 bottom-[5%] left-0 right-0 mx-auto justify-center items-center child:mx-2 child:bg-slate-500 child:w-12 child:h-4"></div>
+                    </div>
                 </div>
 
-                <div class="-z-10 w-fit h-fit absolute -top-30rem -left-40rem">
-                    <div class="rounded-full w-1500px h-1500px bg-circle-peach"></div>
+                <div>
+                    <div class="-z-10 w-fit h-fit absolute -top-30rem -left-40rem">
+                        <div class="rounded-full w-1500px h-1500px bg-circle-peach"></div>
+                    </div>
                 </div>
             </main>
+
+            <footer class="w-full bg-lime-400 px-5 py-4 flex flex-wrap">
+                <div class="w-1/2 flex flex-wrap flex-col">
+                    <div class="font-semibold text-2xl">Main Menu</div>
+                    <div><a href="#">Home</a></div>
+                    <div><a href="#">Students</a></div>
+                    <div><a href="#">Contact</a></div>
+                    <div><a href="#">About</a></div>
+                    <div><a href="#">Tutors</a></div>
+                </div>
+                <div class="w-1/2 flex flex-col">
+                    <h3 class="font-semibold text-2xl mb-2">Socials</h3>
+                    <a href="#">
+                        <img class="w-8" src="./assets/instagram-logo.svg">
+                    </a>
+                </div>
+                <div class="w-full mt-6">
+                    © 2022 VirtualTutoringSF. All Rights Reserved
+                </div>
+            </footer>
         </div>
+
+        <script src="./js/carousel.js" async defer></script>
     </body>
 </html>
