@@ -6,8 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "circle-peach": "#ffd8b7",
-        "button-red": "#980A00"
+        "peach1": "#ffd8b7",
+        "peach2": "rgb(212, 110, 16)",
+        "peach3": "orange",
+        "red1": "#980A00"
       },
       spacing: {
         "30rem": "30rem",

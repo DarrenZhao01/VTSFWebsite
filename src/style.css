@@ -4,9 +4,17 @@
 
 .subheading {
     font-weight: theme("fontWeight.medium") !important;
-    font-size: theme("fontSize.5xl") !important;
-    line-height: theme("fontSize.5xl") !important;
+    font-size: theme("fontSize.6xl") !important;
+    line-height: theme("fontSize.6xl") !important;
     margin-bottom: theme("margin.5") !important;
+}
+
+.filter-peach2 {
+    filter: invert(46%) sepia(30%) saturate(1961%) hue-rotate(356deg) brightness(96%) contrast(92%);
+}
+
+.filter-peach3 {
+    filter: invert(71%) sepia(29%) saturate(5661%) hue-rotate(1deg) brightness(104%) contrast(103%);
 }
 
 .carousel-wrapper .carousel {
@@ -33,7 +41,7 @@
 }
 
 .carousel-wrapper .bottom-icons > *.selected {
-    background-color: black;
+    background-color: theme("colors.peach3");
     transition: background-color 1s ease;
 }
 

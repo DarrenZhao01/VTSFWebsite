@@ -52,8 +52,8 @@
 
             <main>
                 <div>
-                    <div class="flex mx-auto pt-32 w-9/12">
-                        <div class="w-1/2">
+                    <div class="flex mx-auto pt-32 w-9/12 flex-wrap">
+                        <div class="w-1/2 text-peach2">
                             <h1 class="text-6xl font-semibold">Welcome.</h1>
                             <div class="text-5xl">
                                 <br>
@@ -67,22 +67,22 @@
                         <div class="w-1/2 content-center">
                             <img class="mx-auto" src="./assets/home-image.svg" onerror="this.src=''">
                         </div>
-                    </div>
-
-                    <div class="flex mx-auto mt-10 child:p-6 child:bg-button-red child:text-white child:rounded-full child:m-auto">
-                        <button>Enroll as Student</button>
-                        <button>Enroll as Tutor</button>
+                        <div class="w-1/2"></div>
+                        <div class="flex w-1/2 mt-10 child:p-6 child:bg-red1 child:text-white child:rounded-full">
+                            <button class="mr-auto">Enroll as Student</button>
+                            <button>Enroll as Tutor</button>
+                        </div>
                     </div>
 
                     <div class="flex mx-auto my-16 w-9/12 child:mx-4">
-                        <div class="w-1/2 flex flex-col">
+                        <div class="w-1/2 flex flex-col  h-full my-auto">
                             <h2 class="self-center subheading">Fall Session!</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
                         </div>
                         <div class="w-1/2 flex flex-col items-center">
                             <h2 class="subheading">Announcements</h2>
                             <div>
-                                <img class="w-30rem" src="./assets/filler-tall.jpg">
+                                <img class="w-30rem" src="./assets/flyer.jpg">
                             </div>
                         </div>
                     </div>
@@ -109,11 +109,11 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap text-4xl mx-auto mb-16 w-9/12">
-                        <h2 class="w-full subheading text-center">So far we've:</h2>
+                    <div class="flex flex-wrap text-4xl mx-auto mb-16 w-9/12 text-peach3">
+                        <h2 class="w-full subheading text-center text-black">So far we've:</h2>
                         <div class="w-1/2 child:mx-4">
                             <div>
-                                <img class="w-1/2 max-w-sm mx-auto" src="./assets/pencil.svg" onerror="this.src=''">
+                                <img class="w-1/2 max-w-sm mx-auto filter-peach3" src="./assets/pencil.svg" onerror="this.src=''">
                             </div>
                             <div class="text-center">
                                 <p>Taught over</p>
@@ -123,7 +123,7 @@
                         </div>
                         <div class="w-1/2 child:mx-4">
                             <div>
-                                <img class="w-1/2 max-w-sm mx-auto" src="./assets/person.svg" onerror="this.src=''">
+                                <img class="w-1/2 max-w-sm mx-auto filter-peach3" src="./assets/person.svg" onerror="this.src=''">
                             </div>
                             <div class="text-center">
                                 <p>Helped over</p>
@@ -157,7 +157,7 @@
                     </div>
 
                     <div class="carousel-wrapper relative">
-                        <div class="carousel w-3/4 max-h-[26rem]">
+                        <div class="carousel w-3/4">
                             <img src="./assets/carousel/image1.jpg">
                             <img src="./assets/carousel/image2.jpg">
                             <img src="./assets/carousel/image3.jpg">
@@ -165,20 +165,22 @@
                             <img src="./assets/carousel/image5.jpg">
                             <img src="./assets/carousel/image6.jpg">
                             <img src="./assets/carousel/image7.jpg">
-                            <img src="./assets/carousel/image8.jpg">
                         </div>
-                        <div class="bottom-icons flex absolute w-3/4 bottom-[5%] left-0 right-0 mx-auto justify-center items-center child:mx-2 child:bg-slate-500 child:w-12 child:h-4"></div>
+                        <div class="bottom-icons flex absolute w-3/4 bottom-[5%] left-0 right-0 mx-auto justify-center items-center child:mx-2 child:bg-peach2 child:w-12 child:h-4"></div>
                     </div>
                 </div>
 
                 <div>
                     <div class="-z-10 w-fit h-fit absolute -top-30rem -left-40rem">
-                        <div class="rounded-full w-1500px h-1500px bg-circle-peach"></div>
+                        <div class="rounded-full w-1500px h-1500px bg-peach1"></div>
+                    </div>
+                    <div class="-z-10 w-fit h-fit absolute top-[50rem] -right-[30rem]">
+                        <div class="rounded-full w-[70rem] h-[70rem] bg-peach1"></div>
                     </div>
                 </div>
             </main>
 
-            <footer class="w-full bg-lime-400 px-5 py-4 flex flex-wrap">
+            <footer class="w-full px-5 py-4 flex flex-wrap bg-peach1 text-peach2">
                 <div class="w-1/2 flex flex-wrap flex-col">
                     <div class="font-semibold text-2xl">Main Menu</div>
                     <div><a href="#">Home</a></div>
@@ -187,10 +189,13 @@
                     <div><a href="#">About</a></div>
                     <div><a href="#">Tutors</a></div>
                 </div>
-                <div class="w-1/2 flex flex-col">
-                    <h3 class="font-semibold text-2xl mb-2">Socials</h3>
+                <div class="w-1/2 flex flex-wrap items-start content-start child:mr-1">
+                    <h3 class="font-semibold text-2xl mb-2 w-full">Socials</h3>
                     <a href="#">
-                        <img class="w-8" src="./assets/instagram-logo.svg">
+                        <img class="w-8 filter-peach2" src="./assets/instagram-logo.svg" onerror="this.src=''">
+                    </a>
+                    <a href="#">
+                        <img class="w-8 filter-peach2" src="./assets/linkedin-logo.svg" onerror="this.src=''">
                     </a>
                 </div>
                 <div class="w-full mt-6">
