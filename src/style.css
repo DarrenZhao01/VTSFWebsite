@@ -8,6 +8,10 @@
     transform: translateX(-50%);
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .subheading {
     font-weight: theme("fontWeight.medium") !important;
     font-size: theme("fontSize.4xl") !important;

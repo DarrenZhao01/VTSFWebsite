@@ -559,8 +559,12 @@ video {
   position: relative;
 }
 
-.-top-10 {
-  top: -2.5rem;
+.-top-0 {
+  top: -0px;
+}
+
+.-left-0 {
+  left: -0px;
 }
 
 .bottom-\[5\%\] {
@@ -607,12 +611,16 @@ video {
   right: 0.75rem;
 }
 
-.-top-0 {
-  top: -0px;
+.-right-0 {
+  right: -0px;
 }
 
 .-z-10 {
   z-index: -10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-right {
@@ -673,16 +681,16 @@ video {
   margin-left: auto;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
 
 .mr-auto {
   margin-right: auto;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .mb-4 {
@@ -709,6 +717,18 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -733,6 +753,10 @@ video {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -744,6 +768,14 @@ video {
 
 .w-3\/5 {
   width: 60%;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .w-1\/2 {
@@ -838,6 +870,10 @@ video {
   align-self: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -848,6 +884,11 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .bg-peach1 {
@@ -887,6 +928,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -897,19 +948,9 @@ video {
   line-height: 2.5rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-semibold {
@@ -960,6 +1001,10 @@ video {
   top: -37rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .subheading {
@@ -1105,6 +1150,11 @@ video {
 .child\:mx-2 > * {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.child\:my-3 > * {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .child\:mx-0 > * {
