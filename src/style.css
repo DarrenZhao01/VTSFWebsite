@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #circle3 {
-    top: -29rem;
+    top: -37rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -28,7 +28,7 @@
 }
 
 .enroll {
-    padding: 1rem 0.25rem;
+    padding: 1rem 0.5rem;
 }
 
 .session-title {
@@ -104,7 +104,7 @@
 
 @media (min-width: 375px) {
     #circle3 {
-        top: -35rem;
+        top: -39rem;
     }
 
     .subheading {
