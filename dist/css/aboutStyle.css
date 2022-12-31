@@ -5,7 +5,8 @@ body{
 
 #wave {
     position: absolute;
-    margin-top: -1%;
+    top: -2%;
+    height: 100%;
     z-index: -2;
 }
 .aboutUs{
