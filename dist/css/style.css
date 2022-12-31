@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -59,7 +59,6 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
-  font-family: 'Inter', sans-serif;
 }
 
 /*
@@ -630,10 +629,6 @@ video {
   margin-right: auto;
 }
 
-my-32 {
-    margin-top: 17rem;
-}
-
 .-mx-full {
   margin-left: -100%;
   margin-right: -100%;
@@ -644,9 +639,9 @@ my-32 {
   margin-right: 0.5rem;
 }
 
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .my-auto {
@@ -917,6 +912,10 @@ my-32 {
   font-weight: 500;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-peach2 {
   --tw-text-opacity: 1;
   color: rgb(212 110 16 / var(--tw-text-opacity));
@@ -1184,14 +1183,6 @@ my-32 {
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
-  }
-
-  .sm\:ml-0 {
-    margin-left: 0px;
-  }
-
-  .sm\:mr-auto {
-    margin-right: auto;
   }
 
   .sm\:mt-0 {
