@@ -52,35 +52,43 @@
 
             <main>
                 <div>
-                    <div class="flex mx-auto pt-32 w-9/12 flex-wrap">
-                        <div class="w-1/2 text-peach2">
-                            <h1 class="text-6xl font-semibold">Welcome.</h1>
-                            <div class="text-5xl">
+                    <div class="block relative sm:flex mx-auto pt-32 w-full sm:w-3/4 flex-wrap">
+                        <div class="w-full sm:w-1/2 text-center sm:text-left text-peach2">
+                            <h1 class="text-6xl font-semibold -mx-full sm:mx-0">Welcome.</h1>
+                            <div class="text-4xl sm:text-5xl mx-2 sm:mx-0">
                                 <br>
                                 Free online tutoring
-                                <br>
+                                <br class="hidden sm:block">
                                 for students by
-                                <br>
+                                <br class="hidden sm:block">
                                 students.
                             </div>
                         </div>
-                        <div class="w-1/2 content-center">
+                        <div class="hidden sm:block w-1/2 content-center">
                             <img class="mx-auto" src="./assets/home-image.svg" onerror="this.src=''">
                         </div>
-                        <div class="w-1/2"></div>
-                        <div class="flex w-1/2 mt-10 child:p-6 child:bg-red1 child:text-white child:rounded-full">
-                            <button class="mr-auto">Enroll as Student</button>
-                            <button>Enroll as Tutor</button>
+                        <div class="hidden sm:block w-1/2"></div>
+                        <div class="flex w-full sm:w-1/2 mt-10 child:child:bg-red1 child:child:text-white child:child:rounded-full">
+                            <div class="mr-auto ml-auto sm:ml-0">
+                                <button class="enroll">Enroll as Student</button>
+                            </div>
+                            <div class="ml-auto mr-auto sm:mr-auto">
+                                <button class="enroll">Enroll as Tutor</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="flex mx-auto my-16 w-9/12 child:mx-4">
-                        <div class="w-1/2 flex flex-col  h-full my-auto">
-                            <h2 class="self-center subheading">Fall Session!</h2>
+                    <div class="block sm:flex text-center sm:text-left mx-auto my-16 w-9/12 child:mx-0 child:sm:mx-4">
+                        <div class="hidden sm:flex w-1/2 flex-col h-full my-auto">
+                            <h2 class="self-center font-medium text-5xl mb-6 text-left text-green1">Spring Session!</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
                         </div>
-                        <div class="w-1/2 flex flex-col items-center">
-                            <h2 class="subheading">Announcements</h2>
+                        <div class="w-full sm:w-1/2 flex flex-col items-center">
+                            <h2 class="hidden sm:inline subheading">Announcements</h2>
+                            <div class="flex sm:hidden w-full flex-col h-full my-auto">
+                                <h2 class="self-center font-medium text-5xl mt-3 mb-4 text-green1">Spring Session!</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
+                            </div>
                             <div>
                                 <img class="w-30rem" src="./assets/flyer.jpg">
                             </div>
@@ -88,8 +96,8 @@
                     </div>
 
                     <div class="flex flex-col mx-auto mb-16 w-9/12">
-                        <h2 class="subheading">Our mission</h2>
-                        <div class="grid grid-cols-2 gap-7 child:flex child:child:mx-2">
+                        <h2 class="subheading text-center sm:text-left">Our Mission</h2>
+                        <div class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-7 child:flex child:mb-5 child:sm:mb-0 child:child:mx-2">
                             <div>
                                 <h3 class="select-none">◯</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Arcu felis bibendum ut tristique. Diam maecenas sed enim ut. Id leo in vitae turpis. Sit amet consectetur adipiscing elit ut aliquam purus sit. Neque convallis a cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan. Vitae proin sagittis nisl rhoncus. Tortor dignissim convallis aenean et.</p>
@@ -109,10 +117,10 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap text-4xl mx-auto mb-16 w-9/12 text-peach3">
+                    <div class="block sm:flex flex-wrap text-4xl mx-auto mb-16 w-9/12 text-peach3">
                         <h2 class="w-full subheading text-center text-black">So far we've:</h2>
-                        <div class="w-1/2 child:mx-4">
-                            <div>
+                        <div class="w-full sm:w-1/2 child:mx-4">
+                            <div class="my-3">
                                 <img class="w-1/2 max-w-sm mx-auto filter-peach3" src="./assets/pencil.svg" onerror="this.src=''">
                             </div>
                             <div class="text-center">
@@ -121,8 +129,8 @@
                                 <p>classes</p>
                             </div>
                         </div>
-                        <div class="w-1/2 child:mx-4">
-                            <div>
+                        <div class="w-full sm:w-1/2 mt-7 sm:mt-0 child:mx-4">
+                            <div class="my-3">
                                 <img class="w-1/2 max-w-sm mx-auto filter-peach3" src="./assets/person.svg" onerror="this.src=''">
                             </div>
                             <div class="text-center">
@@ -157,7 +165,7 @@
                     </div>
 
                     <div class="carousel-wrapper relative">
-                        <div class="carousel w-3/4">
+                        <div class="carousel w-full sm:w-3/4">
                             <img src="./assets/carousel/image1.jpg">
                             <img src="./assets/carousel/image2.jpg">
                             <img src="./assets/carousel/image3.jpg">
@@ -166,16 +174,7 @@
                             <img src="./assets/carousel/image6.jpg">
                             <img src="./assets/carousel/image7.jpg">
                         </div>
-                        <div class="bottom-icons flex absolute w-3/4 bottom-[5%] left-0 right-0 mx-auto justify-center items-center child:mx-2 child:bg-peach2 child:w-12 child:h-4"></div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="-z-10 w-fit h-fit absolute -top-30rem -left-40rem">
-                        <div class="rounded-full w-1500px h-1500px bg-peach1"></div>
-                    </div>
-                    <div class="-z-10 w-fit h-fit absolute top-[50rem] -right-[30rem]">
-                        <div class="rounded-full w-[70rem] h-[70rem] bg-peach1"></div>
+                        <div class="bottom-icons flex absolute w-full sm:w-3/4 bottom-[5%] left-0 right-0 mx-auto justify-center items-center child:mx-2 child:bg-peach2 child:w-12 child:h-2"></div>
                     </div>
                 </div>
             </main>
@@ -204,6 +203,26 @@
             </footer>
         </div>
 
+        <div>
+            <div>
+                <div class="hidden sm:block -z-10 w-fit h-fit absolute -top-30rem -left-40rem">
+                    <div class="rounded-full w-1500px aspect-square bg-peach1"></div>
+                </div>
+                <div class="hidden sm:block -z-10 w-fit h-fit absolute top-[50rem] -right-[30rem]">
+                    <div class="rounded-full w-[70rem] aspect-square bg-peach1"></div>
+                </div>
+                <div id="circle3" class="block sm:hidden -z-10 w-[1120px] h-fit absolute -top-[35rem] left-[50%] -translate-x-[50%]">
+                    <div class="rounded-full w-[70rem] aspect-square bg-peach1"></div>
+                </div>
+            </div>
+            <div class="fixed bottom-3 right-3">
+                <button class="scroll-to-top flex justify-center items-center rounded-full w-14 aspect-square bg-peach3" onclick="initScrollToTop()">
+                    <img class="w-10 filter-white" src="./assets/up.svg" onerror="this.src=''">
+                </button>
+            </div>
+        </div>
+
         <script src="./js/carousel.js" async defer></script>
+        <script src="./js/scrollToTop.js" async defer></script>
     </body>
 </html>
