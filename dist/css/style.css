@@ -1073,8 +1073,6 @@ video {
      object-fit: cover !important;
   line-height: 50rem !important;
   width: 100% !important;
-  height: -moz-fit-content !important;
-  height: fit-content !important;
 }
 
 .carousel-wrapper .bottom-icons > * {
@@ -1197,6 +1195,10 @@ video {
 
 .child\:h-2 > * {
   height: 0.5rem;
+}
+
+.child\:w-full > * {
+  width: 100%;
 }
 
 .child\:w-12 > * {
