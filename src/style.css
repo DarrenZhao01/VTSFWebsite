@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    font-family: 'Inter', sans-serif;
+}
+
 #circle3 {
     top: -37rem;
     left: 50%;
