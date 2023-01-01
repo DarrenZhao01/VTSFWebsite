@@ -43,6 +43,20 @@
     margin-bottom: theme("margin.2") !important;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.menu-dropdown {
+    transition: width 0.5s ease;
+    width: 100%;
+}
+
+.menu-dropdown.hide {
+    transition: width 0.5s ease;
+    width: 0%;
+}
+
 .scroll-to-top {
     transition: opacity 0.5s ease;
     opacity: 1;
