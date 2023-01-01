@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -836,6 +836,10 @@ video {
 
 .list-none {
   list-style-type: none;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-1 {
