@@ -1201,6 +1201,10 @@ video {
   width: 3rem;
 }
 
+.child\:w-full > * {
+  width: 100%;
+}
+
 .child\:child\:rounded-full > * > * {
   border-radius: 9999px;
 }
