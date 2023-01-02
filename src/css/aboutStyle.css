@@ -1,9 +1,9 @@
-body{
+body {
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
 }
 
-.aboutUs{
+.aboutUs {
     padding-top: 10%;
     margin: auto;
     text-align: center;
@@ -11,23 +11,24 @@ body{
     font-weight: 700;
 }
 
-.about-description{
+.about-description {
     margin-top: 1.5rem;
     text-align: center;
     font-size: 1.8rem;
 }
-#arrow{
+#arrow {
     margin: auto;
     margin-top: 8rem;
 }
-.showcase {
+/* .showcase {
     background-image: url("https://virtualtutoringsf.org/vtIMG/Top.png");
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     min-height: 300px;
-}
+} */
+
 /*new css*/
 
 /* .containerabout{
