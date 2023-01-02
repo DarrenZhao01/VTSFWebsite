@@ -42,3 +42,7 @@ addEventListener("scroll", (event) => {
         }
     }
 });
+
+module.exports = {
+    initScrollToTop: initScrollToTop,
+};

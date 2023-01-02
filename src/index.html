@@ -60,7 +60,7 @@
                         </li>
                     </ul>
                     <div class="block sm:hidden">
-                        <button onclick="openMenuDropdown()">
+                        <button onclick="lib.openMenuDropdown()">
                             <img class="w-10 aspect-square" src="./static/assets/menu-dropdown.svg">
                         </button>
                     </div>
@@ -92,7 +92,7 @@
                         </div>
                         <div class="absolute top-0 right-0">
                             <div class="mr-4 mt-3">
-                                <button onclick="closeMenuDropdown()">
+                                <button onclick="lib.closeMenuDropdown()">
                                     <img class="w-10 aspect-square" src="./static/assets/menu-dropdown-exit.svg">
                                 </button>
                             </div>
@@ -277,7 +277,7 @@
         </div>
 
         <div class="fixed bottom-3 right-3">
-            <button class="scroll-to-top flex justify-center items-center rounded-full w-14 aspect-square bg-peach1 opacity-0" onclick="initScrollToTop()">
+            <button class="scroll-to-top flex justify-center items-center rounded-full w-14 aspect-square bg-peach1 opacity-0" onclick="lib.closeMenuDropdown()">
                 <img class="w-8 filter-white" src="./static/assets/up.svg" onerror="this.src=''">
             </button>
         </div>

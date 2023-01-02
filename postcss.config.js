@@ -3,7 +3,16 @@ if (process.env.NODE_ENV === "production") {
         plugins: {
             tailwindcss: {},
             autoprefixer: {},
-            cssnano: {},
+            cssnano: {
+                preset: [
+                    "default",
+                    {
+                        discardComments: {
+                            removeAll: true,
+                        },
+                    },
+                ],
+            },
         },
     }
 } else {

@@ -5,17 +5,12 @@ function startCarousels() {
         let carousel = carouselWrappers[i].getElementsByClassName("carousel")[0];
         let bottomIcons = carouselWrappers[i].getElementsByClassName("bottom-icons")[0];
         let childElement = carousel.firstElementChild;
-        let maxHeight = childElement.offsetHeight;
 
         while (bottomIcons.firstChild) {
             bottomIcons.removeChild(bottomIcons.firstChild);
         }
 
         for (let j = 0; j < carousel.childElementCount; j++) {
-            if (childElement.offsetHeight > maxHeight) {
-                maxHeight = childElement.offsetHeight;
-            }
-
             let childElementIdNumber = Math.random() * 1000000;
 
             while (document.getElementById("carousel-item-" + childElementIdNumber)) {
@@ -52,16 +47,15 @@ function startCarousels() {
             childElement = childElement.nextElementSibling;
         }
 
-        carousel.style.height = maxHeight;
-
         carouselScroll(carousel);
     }
 }
 
-function carouselScroll(carousel) {
+async function carouselScroll(carousel) {
     let childElement = carousel.firstElementChild;
 
     for (let i = 0; i < carousel.childElementCount; i++) {
+
         childElement.classList.add("scroll");
         childElement = childElement.nextElementSibling;
     }

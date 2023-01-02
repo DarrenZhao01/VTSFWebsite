@@ -10,7 +10,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	margin-top: 20%;
+	padding-top: 5rem;
 	width: 100%;
 	font-size: 60px;
 }

@@ -49,35 +49,76 @@
                </defs>
                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,147L60,130.7C120,114,240,82,360,57.2C480,33,600,16,720,8.2C840,0,960,0,1080,16.3C1200,33,1320,65,1440,65.3C1560,65,1680,33,1800,32.7C1920,33,2040,65,2160,138.8C2280,212,2400,327,2520,375.7C2640,425,2760,408,2880,400.2C3000,392,3120,392,3240,375.7C3360,359,3480,327,3600,334.8C3720,343,3840,392,3960,359.3C4080,327,4200,212,4320,179.7C4440,147,4560,196,4680,253.2C4800,310,4920,376,5040,383.8C5160,392,5280,343,5400,302.2C5520,261,5640,229,5760,204.2C5880,180,6000,163,6120,130.7C6240,98,6360,49,6480,40.8C6600,33,6720,65,6840,106.2C6960,147,7080,196,7200,220.5C7320,245,7440,245,7560,261.3C7680,278,7800,310,7920,310.3C8040,310,8160,278,8280,277.7C8400,278,8520,310,8580,326.7L8640,343L8640,490L8580,490C8520,490,8400,490,8280,490C8160,490,8040,490,7920,490C7800,490,7680,490,7560,490C7440,490,7320,490,7200,490C7080,490,6960,490,6840,490C6720,490,6600,490,6480,490C6360,490,6240,490,6120,490C6000,490,5880,490,5760,490C5640,490,5520,490,5400,490C5280,490,5160,490,5040,490C4920,490,4800,490,4680,490C4560,490,4440,490,4320,490C4200,490,4080,490,3960,490C3840,490,3720,490,3600,490C3480,490,3360,490,3240,490C3120,490,3000,490,2880,490C2760,490,2640,490,2520,490C2400,490,2280,490,2160,490C2040,490,1920,490,1800,490C1680,490,1560,490,1440,490C1320,490,1200,490,1080,490C960,490,840,490,720,490C600,490,480,490,360,490C240,490,120,490,60,490L0,490Z"></path>
             </svg>
-            <div class="float-right mr-4 mt-3">
-               <ul class="list-none my-3 child:inline child:mx-2 text-xl">
-                  <li>
-                     <a href="index.html">
-                        <span>Home</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="tutors.html">
-                        <span>Tutors</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="students.html">
-                        <span>Students</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="about.html">
-                        <span>About</span>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-            <div class="float-left mt-3 ml-3">
-               <a href="#">
-                  <img alt="VTSF Logo" class="w-3/5" src="./static/assets/logo.png">
-               </a>
-            </div>
+            <nav class="absolute flex w-full items-center z-20">
+               <div class="mt-3 ml-3">
+                   <a href="#">
+                       <img class="w-3/5" src="./static/assets/logo.png">
+                   </a>
+               </div>
+               <div class="ml-auto mr-4 mt-3">
+                   <ul class="hidden sm:block list-none child:inline child:mx-2 text-xl">
+                       <li>
+                           <a href="./index.html">
+                               <span>Home</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="./tutors.html">
+                               <span>Tutors</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="./students.html">
+                               <span>Students</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="./about.html">
+                               <span>About</span>
+                           </a>
+                       </li>
+                   </ul>
+                   <div class="block sm:hidden">
+                       <button onclick="lib.openMenuDropdown()">
+                           <img class="w-10 aspect-square" src="./static/assets/menu-dropdown.svg">
+                       </button>
+                   </div>
+                   <div class="menu-dropdown hide absolute top-0 right-0 w-screen h-screen bg-slate-700 z-50">
+                       <div class="text-center my-3">
+                           <h2 class="text-5xl mb-6">Menu</h2>
+                           <ul class="text-2xl child:my-3">
+                               <li>
+                                   <a href="./index.html">
+                                       <span>Home</span>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="./tutors.html">
+                                       <span>Tutors</span>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="./students.html">
+                                       <span>Students</span>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="./about.html">
+                                       <span>About</span>
+                                   </a>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="absolute top-0 right-0">
+                           <div class="mr-4 mt-3">
+                               <button onclick="lib.closeMenuDropdown()">
+                                   <img class="w-10 aspect-square" src="./static/assets/menu-dropdown-exit.svg">
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </nav>
          </div>
       </div>
       <div class="title-group">

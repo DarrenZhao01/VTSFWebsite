@@ -1,1 +1,197 @@
-!function(){var t={59:function(){function t(t,n){(null==n||n>t.length)&&(n=t.length);for(var r=0,e=new Array(n);r<n;r++)e[r]=t[r];return e}var n,r=function(n,r){var e="undefined"!=typeof Symbol&&n[Symbol.iterator]||n["@@iterator"];if(!e){if(Array.isArray(n)||(e=function(n,r){if(n){if("string"==typeof n)return t(n,r);var e=Object.prototype.toString.call(n).slice(8,-1);return"Object"===e&&n.constructor&&(e=n.constructor.name),"Map"===e||"Set"===e?Array.from(n):"Arguments"===e||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(e)?t(n,r):void 0}}(n))){e&&(n=e);var o=0,a=function(){};return{s:a,n:function(){return o>=n.length?{done:!0}:{done:!1,value:n[o++]}},e:function(t){throw t},f:a}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,c=!0,u=!1;return{s:function(){e=e.call(n)},n:function(){var t=e.next();return c=t.done,t},e:function(t){u=!0,i=t},f:function(){try{c||null==e.return||e.return()}finally{if(u)throw i}}}}(document.getElementsByClassName("card-wrapper"));try{for(r.s();!(n=r.n()).done;)n.value.addEventListener("click",(function(t){t.target.classList.toggle("flipped")}))}catch(t){r.e(t)}finally{r.f()}},417:function(){addEventListener("scroll",(function(t){var n=document.getElementsByClassName("scroll-to-top");if(window.scrollY<window.innerHeight)for(var r=0;r<n.length;r++)n[r].classList.add("opacity-0");else for(var e=0;e<n.length;e++)n[e].classList.remove("opacity-0")}))}},n={};function r(e){var o=n[e];if(void 0!==o)return o.exports;var a=n[e]={exports:{}};return t[e](a,a.exports,r),a.exports}r.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return r.d(n,{a:n}),n},r.d=function(t,n){for(var e in n)r.o(n,e)&&!r.o(t,e)&&Object.defineProperty(t,e,{enumerable:!0,get:n[e]})},r.o=function(t,n){return Object.prototype.hasOwnProperty.call(t,n)},function(){"use strict";r(59),r(417)}()}();
+var lib;
+/******/ (function() { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ 486:
+/***/ (function() {
+
+let cardWrappers = document.getElementsByClassName("card-wrapper");
+
+for (let cardWrapper of cardWrappers) {
+    cardWrapper.addEventListener("click", (event) => {
+        event.target.classList.toggle("flipped");
+    });
+}
+
+/***/ }),
+
+/***/ 4:
+/***/ (function(module) {
+
+function openMenuDropdown() {
+    document.body.classList.add("overflow-hidden");
+
+    let menuDropdowns = document.getElementsByClassName("menu-dropdown");
+
+    for (let i = 0; i < menuDropdowns.length; i++) {
+        menuDropdowns[i].classList.remove("hide");
+    }
+}
+
+function closeMenuDropdown() {
+    document.body.classList.remove("overflow-hidden");
+
+    let menuDropdowns = document.getElementsByClassName("menu-dropdown");
+
+    for (let i = 0; i < menuDropdowns.length; i++) {
+        menuDropdowns[i].classList.add("hide");
+    }
+}
+
+module.exports = {
+    openMenuDropdown: openMenuDropdown,
+    closeMenuDropdown: closeMenuDropdown,
+};
+
+/***/ }),
+
+/***/ 237:
+/***/ (function(module) {
+
+const timeToTop = 500; // ms
+const scrollInterval = 3; // ms
+
+function easeInOutQuart(x) {
+    return x < 0.5 ? 8 * x * x * x * x : 1 - Math.pow(-2 * x + 2, 4) / 2;
+}
+
+function initScrollToTop() {
+    const currentScrollYPosition = window.scrollY;
+    let totalScrolls = Math.ceil(timeToTop / scrollInterval);
+    let scrollPositions = [];
+
+    for (let i = 1; i <= totalScrolls; i++) {
+        scrollPositions.push(currentScrollYPosition - (easeInOutQuart(i / totalScrolls) * currentScrollYPosition));
+    }
+
+    scrollToTop(scrollPositions.values(), scrollInterval);
+}
+
+function scrollToTop(iterator, msDelay) {
+    let result = iterator.next();
+    
+    window.scrollTo(0, result.value);
+
+    if (!result.done) {
+        setTimeout(() => {
+            scrollToTop(iterator, msDelay);
+        }, msDelay);
+    }
+}
+
+addEventListener("scroll", (event) => {
+    const elements = document.getElementsByClassName("scroll-to-top");
+
+    if (window.scrollY < window.innerHeight) {
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].classList.add("opacity-0");
+        }
+    } else {
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].classList.remove("opacity-0");
+        }
+    }
+});
+
+module.exports = {
+    initScrollToTop: initScrollToTop,
+};
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _util_menuDropdown_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
+/* harmony import */ var _util_menuDropdown_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_util_menuDropdown_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _util_menuDropdown_js__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = function(key) { return _util_menuDropdown_js__WEBPACK_IMPORTED_MODULE_0__[key]; }.bind(0, __WEBPACK_IMPORT_KEY__)
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
+/* harmony import */ var _util_scrollToTop_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(237);
+/* harmony import */ var _util_scrollToTop_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_util_scrollToTop_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _util_scrollToTop_js__WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = function(key) { return _util_scrollToTop_js__WEBPACK_IMPORTED_MODULE_1__[key]; }.bind(0, __WEBPACK_IMPORT_KEY__)
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
+/* harmony import */ var _util_cardFlip_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(486);
+/* harmony import */ var _util_cardFlip_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_util_cardFlip_js__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+
+
+
+}();
+lib = __webpack_exports__;
+/******/ })()
+;

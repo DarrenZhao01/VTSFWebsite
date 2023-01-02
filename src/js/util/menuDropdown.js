@@ -17,3 +17,8 @@ function closeMenuDropdown() {
         menuDropdowns[i].classList.add("hide");
     }
 }
+
+module.exports = {
+    openMenuDropdown: openMenuDropdown,
+    closeMenuDropdown: closeMenuDropdown,
+};

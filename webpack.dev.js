@@ -37,21 +37,25 @@ module.exports = merge(common, {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html",
+            inject: "body",
             chunks: ["index"],
         }),
         new HtmlWebpackPlugin({
             filename: "about.html",
             template: "./src/about.html",
+            inject: "body",
             chunks: ["about"],
         }),
         new HtmlWebpackPlugin({
             filename: "students.html",
             template: "./src/students.html",
+            inject: "body",
             chunks: ["students"],
         }),
         new HtmlWebpackPlugin({
             filename: "tutors.html",
             template: "./src/tutors.html",
+            inject: "body",
             chunks: ["tutors"],
         }),
     ],

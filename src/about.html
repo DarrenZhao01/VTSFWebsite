@@ -36,35 +36,76 @@
 															</p>
 															<![endif]-->
         <div>
-            <div class="float-right mr-4 mt-3">
-                <ul class="list-none my-3 child:inline child:mx-2 text-xl">
-                    <li>
-                        <a href="index.html">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tutors.html">
-                            <span>Tutors</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="students.html">
-                            <span>Students</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                            <span>About</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="float-left mt-3 ml-3">
-                <a href="#">
-                    <img alt="VTSF Logo" class="w-3/5" src="./static/assets/logo.png">
-                </a>
-            </div>
+            <nav class="absolute flex w-full items-center z-20">
+                <div class="mt-3 ml-3">
+                    <a href="#">
+                        <img class="w-3/5" src="./static/assets/logo.png">
+                    </a>
+                </div>
+                <div class="ml-auto mr-4 mt-3">
+                    <ul class="hidden sm:block list-none child:inline child:mx-2 text-xl">
+                        <li>
+                            <a href="./index.html">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tutors.html">
+                                <span>Tutors</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./students.html">
+                                <span>Students</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about.html">
+                                <span>About</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="block sm:hidden">
+                        <button onclick="lib.openMenuDropdown()">
+                            <img class="w-10 aspect-square" src="./static/assets/menu-dropdown.svg">
+                        </button>
+                    </div>
+                    <div class="menu-dropdown hide absolute top-0 right-0 w-screen h-screen bg-slate-700 z-50">
+                        <div class="text-center my-3">
+                            <h2 class="text-5xl mb-6">Menu</h2>
+                            <ul class="text-2xl child:my-3">
+                                <li>
+                                    <a href="./index.html">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./tutors.html">
+                                        <span>Tutors</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./students.html">
+                                        <span>Students</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./about.html">
+                                        <span>About</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="absolute top-0 right-0">
+                            <div class="mr-4 mt-3">
+                                <button onclick="lib.closeMenuDropdown()">
+                                    <img class="w-10 aspect-square" src="./static/assets/menu-dropdown-exit.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
             <div class="aboutUs">
                 <h1>About Us</h1>
             </div>

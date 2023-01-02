@@ -11,11 +11,11 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.js$/i,
-                include: path.resolve(__dirname, "src"),
-                loader: "babel-loader",
-            },
+            // {
+            //     test: /\.js$/i,
+            //     include: path.resolve(__dirname, "src"),
+            //     loader: "babel-loader",
+            // },
         ],
     },
     optimization: {
@@ -37,6 +37,7 @@ module.exports = {
     output: {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist"),
+        library: "lib",
         clean: true,
     },
 }
