@@ -12,7 +12,6 @@ module.exports = merge(common, {
                 warnings: false,
             },
         },
-        static: ["static"],
     },
     module: {
         rules: [

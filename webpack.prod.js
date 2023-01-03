@@ -31,12 +31,12 @@ module.exports = merge(common, {
                         keep_fnames: /((open|close)MenuDropdown|initScrollToTop)$/,
                     },
                     mangle: {
-                        keep_fnames: true,
+                        keep_fnames: /((open|close)MenuDropdown|initScrollToTop)$/,
                     },
                     format: {
                         comments: false,
                     },
-                    keep_fnames: true,
+                    keep_fnames: /((open|close)MenuDropdown|initScrollToTop)$/,
                 },
                 extractComments: false,
             }),
