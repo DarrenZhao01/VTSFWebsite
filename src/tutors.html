@@ -51,7 +51,7 @@
                  </li>
                  <li>
                      <a href="./tutors.html">
-                         <span>Tutors</span>
+                         <span class="active border-b-2 border-[#82a18f]">Tutors</span>
                      </a>
                  </li>
                  <li>
@@ -65,45 +65,44 @@
                      </a>
                  </li>
              </ul>
-             <div class="block lg:hidden">
-                 <button onclick="lib.openMenuDropdown()">
-                     <img class="w-10 aspect-square" src="./static/assets/menu-dropdown.svg">
-                 </button>
-             </div>
-             <div class="menu-dropdown hide absolute top-0 right-0 w-screen h-screen bg-slate-700 z-50">
-                 <div class="text-center my-3">
-                     <h2 class="text-5xl mb-6">Menu</h2>
-                     <ul class="text-2xl child:my-3">
-                         <li>
-                             <a href="./index.html">
-                                 <span>Home</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="./tutors.html">
-                                 <span>Tutors</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="./students.html">
-                                 <span>Students</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="./about.html">
-                                 <span>About</span>
-                             </a>
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="absolute top-0 right-0">
-                     <div class="mr-4 mt-3">
-                         <button onclick="lib.closeMenuDropdown()">
-                             <img class="w-10 aspect-square" src="./static/assets/menu-dropdown-exit.svg">
-                         </button>
-                     </div>
-                 </div>
-             </div>
+             <div class="block sm:hidden">
+               <button onclick="lib.openMenuDropdown()">
+                   <img class="w-10 aspect-square" src="./static/assets/menu-dropdown.svg">
+               </button>
+           </div>
+           <div class="menu-dropdown hide absolute top-0 right-0 w-screen h-screen bg-[#c5f7d9] z-50">
+               <div class="text-center my-3 mt-64">
+                   <h2 class="text-5xl mb-6 font-bold">Menu</h2>
+                   <ul class="text-2xl child:my-3">
+                       <li class="active">
+                           <a href="./index.html">
+                               <span>Home</span>
+                           </a>
+                       </li>
+                       <li class="">
+                           <a href="./tutors.html">
+                               <span>Tutors</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="./students.html">
+                               <span>Students</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="./about.html">
+                               <span>About</span>
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+               <div class="absolute top-0 right-0">
+                   <div class="mr-4 mt-3">
+                       <button onclick="lib.closeMenuDropdown()">
+                           <img class="w-10 aspect-square" src="./static/assets/menu-dropdown-exit.svg">
+                       </button>
+                   </div>
+               </div>
          </div>
      </nav>
       <div class="title-group">
