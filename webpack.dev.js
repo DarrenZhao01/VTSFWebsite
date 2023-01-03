@@ -17,6 +17,7 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.(sa|sc|c)ss$/i,
+                include: path.resolve(__dirname, "src"),
                 use: [
                     "style-loader",
                     {

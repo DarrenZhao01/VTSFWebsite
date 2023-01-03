@@ -3,7 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.aboutUs {
+.cl-aboutUs {
     padding-top: 10%;
     margin: auto;
     text-align: center;
@@ -11,7 +11,7 @@ body {
     font-weight: 700;
 }
 
-.about-description {
+.cl-about-description {
     margin-top: 1.5rem;
     text-align: center;
     font-size: 1.8rem;
@@ -20,7 +20,7 @@ body {
     margin: auto;
     margin-top: 8rem;
 }
-/* .showcase {
+/* .cl-showcase {
     background-image: url("https://virtualtutoringsf.org/vtIMG/Top.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@ body {
 
 /*new css*/
 
-/* .containerabout{
+/* .cl-containerabout{
 position: relative;
 z-index: 1;
 display: flex;
@@ -41,7 +41,7 @@ flex-wrap: wrap;
 margin: 40px 0;
 }
 
-.containerabout .card{
+.cl-containerabout .cl-card{
 position: relative;
 width: 300px;
 height: 400px;
@@ -55,7 +55,7 @@ align-items: center;
 backdrop-filter: blur(10px);
 }
 
-.containerabout .card .content {
+.cl-containerabout .cl-card .cl-content {
 position: relative;
 display: flex;
 justify-content: center;
@@ -65,11 +65,11 @@ opacity: 0.5;
 transition: 0.5s;
 }
 
-.containerabout .card:hover .content{
+.cl-containerabout .cl-card:hover .cl-content{
 opacity: 1;
 }
 
-.containerabout .card .content .imgBx{
+.cl-containerabout .cl-card .cl-content .cl-imgBx{
 position: relative;
 width: 150px;
 height: 150px;
@@ -78,7 +78,7 @@ overflow: hidden;
 border: 10px solid rgba(0, 0, 0, 0.2);
 }
 
-.containerabout .card .content .imgBx img{
+.cl-containerabout .cl-card .cl-content .cl-imgBx img{
 position: absolute;
 top: 0;
 left: 0;
@@ -87,7 +87,7 @@ height: 100%;
 object-fit: cover;
 }
 
-.containerabout .card .content .contentBx h3{
+.cl-containerabout .cl-card .cl-content .cl-contentBx h3{
 color: white;
 text-transform: uppercase;
 letter-spacing: 2px;
@@ -98,7 +98,7 @@ margin: 20px 0 10px;
 line-height: 1.1em;
 }
 
-.containerabout .card .content .contentBx h4{
+.cl-containerabout .cl-card .cl-content .cl-contentBx h4{
 color: white;
 text-transform: initial;
 letter-spacing: 2px;
@@ -109,7 +109,7 @@ margin: 20px 0 10px;
 line-height: 1.1em;
 } */
 
-.serviceHeaderPPP {
+.cl-serviceHeaderPPP {
     color: rgb(56, 56, 56);
     font-size: 3rem;
 }
@@ -119,26 +119,26 @@ line-height: 1.1em;
     font-weight: 400;
 }
 
-/* #mainNavbar .navbar-brand {
+/* #mainNavbar .cl-navbar-brand {
 color: #ea1c2c;
 font-size: 2rem;
 } */
 
-/* #mainNavbar .nav-link {
+/* #mainNavbar .cl-nav-link {
     color: orange;
     font-size: 20px;
 } */
 
-#mainNavbar .nav-link:hover {
+#mainNavbar .cl-nav-link:hover {
     color: #ea1c2c;
 }
 
-.navbar.scrolled {
+.cl-navbar.cl-scrolled {
     background: white;
     transition: background 500ms;
 }
 
-.textBlock {
+.cl-textBlock {
     padding: 20px;
     background-color: #e6e6e6;
     border: #cccccc solid 1px;
@@ -146,12 +146,12 @@ font-size: 2rem;
     margin: 50px 0px;
 }
 
-.footerRow {
+.cl-footerRow {
     display: flex;
     flex-direction: column;
 }
 
-.newCard {
+.cl-newCard {
     color: white;
     width: 300px;
     height: 400px;
@@ -162,7 +162,7 @@ font-size: 2rem;
     margin: 15px;
 }
 
-.imgBox {
+.cl-imgBox {
     height: 150px;
     width: 150px;
     margin: auto;
@@ -171,25 +171,25 @@ font-size: 2rem;
     margin: 30px auto;
     object-fit: cover;
 }
-/* .front-card {
+/* .cl-front-card {
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     border-bottom-right-radius: 20px !important;
 }
-.cardAddons {
+.cl-cardAddons {
     background-color: #e9ab38; 
     border:#928e8e solid 1 px; 
     border-top-left-radius: 20px !important; 
     border-top-right-radius: 20px !important;
 }
-.card-body {
+.cl-card-body {
     background-color: #e9ab38;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-.card-title {
+.cl-card-title {
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -200,11 +200,11 @@ font-size: 2rem;
     line-height: 1.1em;
 }
 
-.card-img-top {
+.cl-card-img-top {
     object-fit: cover;
 } */
 
-.front-card {
+.cl-front-card {
     max-width: 18rem; 
     max-height: 500px; 
     border-radius: 20px; 
@@ -213,14 +213,14 @@ font-size: 2rem;
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.front-card img {
+.cl-front-card img {
     width: 65%;
     border-radius: 50%;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.back-card{
+.cl-back-card{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,23 +230,23 @@ font-size: 2rem;
     padding-right: 2rem;
     background-color: #e9ab38;
 }
-.card-title {
+.cl-card-title {
     font-weight: 700;
     font-size: 1.5em;
 }
-/* .front-card .btn {
+/* .cl-front-card .cl-btn {
     border-radius: 2em;
     background-color: teal;
     color: #ffffff;
     padding: 0.5em 1.5em;
 }
-.front-card .btn:hover {
+.cl-front-card .cl-btn:hover {
     background-color: rgba(0, 128, 128, 0.7);
     color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 } */
 
-.newBtn {
+.cl-newBtn {
     background: orange;
     border: none;
     padding-left: 20px;
@@ -254,19 +254,19 @@ font-size: 2rem;
     color: white;
 }
 
-/* Container needed to position the button. Adjust the width as needed */
-.container1 {
+/* Container needed to position the button; Adjust the width as needed */
+.cl-container1 {
     position: relative;
 }
 
 /* Make the image responsive */
-.container1 img {
+.cl-container1 img {
     width: 100%;
     height: auto;
 }
 
 /* Style the button and place it in the middle of the container/image */
-.container1 .btn {
+.cl-container1 .cl-btn {
     position: absolute;
     top: 90%;
     left: 50%;
@@ -281,25 +281,25 @@ font-size: 2rem;
     color: white;
 }
 
-.impactText {
+.cl-impactText {
     font-size: 35px;
 }
 
-.flyerPoster {
+.cl-flyerPoster {
     width: 50%;
     height: auto;
 }
-.app{
+.cl-app{
     margin: auto;
 }
 
-.expand{
+.cl-expand{
     margin: auto;
     margin-top: 1.5rem;
     margin-bottom: 24px;
 }
 
-.cardRow{
+.cl-cardRow{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,7 +319,7 @@ font-size: 2rem;
 #popup-trigger {
     cursor: pointer;
 }
-.grid{
+.cl-grid{
     display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); grid-row-gap: 12rem; margin: auto; margin-bottom: 7rem; margin-top: 10rem; padding-left: 6rem; padding-right: 6rem;
 }
 @media all and (max-width: 1024px) {
@@ -329,12 +329,12 @@ font-size: 2rem;
     background: linear-gradient(to bottom, #f7a2a5, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    .grid{
+    .cl-grid{
         display: block;
         margin-top: 4rem;
         padding: 0;
     }
-    .card{
+    .cl-card{
         margin-bottom: 3rem;
     }
     #wave{
@@ -343,7 +343,7 @@ font-size: 2rem;
     h1{
         margin-top: 6rem;
     }
-    .about-description{
+    .cl-about-description{
         margin-left: 2rem;
         margin-right: 2rem;
     }

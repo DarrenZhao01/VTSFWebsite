@@ -1,8 +1,9 @@
+const path = require("path");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
+const MangleCssClassPlugin = require("mangle-css-class-webpack-plugin");
 
 module.exports = merge(common, {
     mode: "production",
@@ -10,10 +11,9 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.(sa|sc|c)ss$/i,
-                    use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                    },
+                include: path.resolve(__dirname, "src"),
+                use: [
+                    MiniCssExtractPlugin.loader,
                     "css-loader",
                     "postcss-loader",
                     "sass-loader",
@@ -21,30 +21,14 @@ module.exports = merge(common, {
             },
         ],
     },
-    optimization: {
-        minimize: false,
-        minimizer: [
-            new TerserPlugin({
-                minify: TerserPlugin.terserMinify,
-                terserOptions: {
-                    compress: {
-                        keep_fnames: /((open|close)MenuDropdown|initScrollToTop)$/,
-                    },
-                    mangle: {
-                        keep_fnames: /((open|close)MenuDropdown|initScrollToTop)$/,
-                    },
-                    format: {
-                        comments: false,
-                    },
-                    keep_fnames: /((open|close)MenuDropdown|initScrollToTop)$/,
-                },
-                extractComments: false,
-            }),
-        ],
-    },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "[name].css",
+            filename: "[name].[fullhash].css",
+        }),
+        new MangleCssClassPlugin({
+            classNameRegExp: "((hover|focus|active|disabled|visited|first|last|odd|even|group-hover|focus-within|xs|sm|md|lg|xl|child)[\\\\]*:)*-?cl-[a-z][a-zA-Z0-9_\-]*",
+            ignorePrefixRegExp: "((hover|focus|active|disabled|visited|first|last|odd|even|group-hover|focus-within|xs|sm|md||lg|xl|child)[\\\\]*:)*",
+            log: true,
         }),
         new HtmlWebpackPlugin({
             filename: "index.html",

@@ -6,7 +6,7 @@ function easeInOutQuart(x) {
 }
 
 function initScrollToTop() {
-    const currentScrollYPosition = window.scrollY;
+    const currentScrollYPosition = document.body.scrollTop;
     let totalScrolls = Math.ceil(timeToTop / scrollInterval);
     let scrollPositions = [];
 
@@ -20,7 +20,7 @@ function initScrollToTop() {
 function scrollToTop(iterator, msDelay) {
     let result = iterator.next();
     
-    window.scrollTo(0, result.value);
+    document.body.scrollTop = result.value;
 
     if (!result.done) {
         setTimeout(() => {
@@ -29,16 +29,16 @@ function scrollToTop(iterator, msDelay) {
     }
 }
 
-addEventListener("scroll", (event) => {
-    const elements = document.getElementsByClassName("scroll-to-top");
-
-    if (window.scrollY < window.innerHeight) {
+document.body.addEventListener("scroll", (event) => {
+    const elements = document.getElementsByClassName("cl-scroll-to-top");
+    
+    if (document.body.scrollTop < document.body.clientHeight) {
         for (let i = 0; i < elements.length; i++) {
-            elements[i].classList.add("opacity-0");
+            elements[i].classList.add("cl-opacity-0");
         }
     } else {
         for (let i = 0; i < elements.length; i++) {
-            elements[i].classList.remove("opacity-0");
+            elements[i].classList.remove("cl-opacity-0");
         }
     }
 });

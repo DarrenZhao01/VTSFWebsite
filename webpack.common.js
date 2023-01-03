@@ -1,6 +1,7 @@
 const path = require("path");
 const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     entry: {
@@ -11,17 +12,35 @@ module.exports = {
     },
     module: {
         rules: [
-            // {
-            //     test: /\.js$/i,
-            //     include: path.resolve(__dirname, "src"),
-            //     loader: "babel-loader",
-            // },
+            {
+                test: /\.js$/i,
+                include: path.resolve(__dirname, "src"),
+                loader: "babel-loader",
+            },
         ],
     },
     optimization: {
         splitChunks: {
             chunks: "all",
         },
+        minimizer: [
+            new TerserPlugin({
+                minify: TerserPlugin.terserMinify,
+                terserOptions: {
+                    compress: {
+                        keep_fnames: /((open|close)MenuDropdown|initScrollToTop)$/,
+                    },
+                    mangle: {
+                        keep_fnames: /((open|close)MenuDropdown|initScrollToTop)$/,
+                    },
+                    format: {
+                        comments: false,
+                    },
+                    keep_fnames: /((open|close)MenuDropdown|initScrollToTop)$/,
+                },
+                extractComments: false,
+            }),
+        ],
     },
     plugins: [
         new CopyPlugin({
@@ -35,7 +54,7 @@ module.exports = {
         new WebpackManifestPlugin(),
     ],
     output: {
-        filename: "[name].bundle.js",
+        filename: "[name].[fullhash].js",
         path: path.resolve(__dirname, "dist"),
         library: "lib",
         clean: true,

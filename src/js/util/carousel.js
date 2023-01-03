@@ -1,9 +1,9 @@
 function startCarousels() {
-    let carouselWrappers = document.getElementsByClassName("carousel-wrapper");
+    let carouselWrappers = document.getElementsByClassName("cl-carousel-wrapper");
 
     for (let i = 0; i < carouselWrappers.length; i++) {
-        let carousel = carouselWrappers[i].getElementsByClassName("carousel")[0];
-        let bottomIcons = carouselWrappers[i].getElementsByClassName("bottom-icons")[0];
+        let carousel = carouselWrappers[i].getElementsByClassName("cl-carousel")[0];
+        let bottomIcons = carouselWrappers[i].getElementsByClassName("cl-bottom-icons")[0];
         let childElement = carousel.firstElementChild;
 
         while (bottomIcons.firstChild) {
@@ -23,7 +23,7 @@ function startCarousels() {
             childElementBottomIcon.id = "carousel-item-bottom-icon-" + childElementIdNumber;
 
             if (j == 0) {
-                childElementBottomIcon.classList.add("selected");
+                childElementBottomIcon.classList.add("cl-selected");
             }
 
             // childElementBottomIcon.addEventListener("click", (event) => {
@@ -34,12 +34,12 @@ function startCarousels() {
             //     let childElement = carousel.firstElementChild;
 
             //     for (let i = 0; i < carousel.childElementCount; i++) {
-            //         childElement.classList.add("fast-scroll");
+            //         childElement.classList.add("cl-fast-scroll");
             //         childElement = childElement.nextElementSibling;
             //     }
 
-            //     document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.id.split("-").at(-1)).classList.remove("selected");
-            //     document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.nextElementSibling.id.split("-").at(-1)).classList.add("selected");
+            //     document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.id.split("-").at(-1)).classList.remove("cl-selected");
+            //     document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.nextElementSibling.id.split("-").at(-1)).classList.add("cl-selected");
             // });
 
             bottomIcons.appendChild(childElementBottomIcon);
@@ -56,18 +56,18 @@ async function carouselScroll(carousel) {
 
     for (let i = 0; i < carousel.childElementCount; i++) {
 
-        childElement.classList.add("scroll");
+        childElement.classList.add("cl-scroll");
         childElement = childElement.nextElementSibling;
     }
 
-    document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.id.split("-").at(-1)).classList.remove("selected");
-    document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.nextElementSibling.id.split("-").at(-1)).classList.add("selected");
+    document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.id.split("-").at(-1)).classList.remove("cl-selected");
+    document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.nextElementSibling.id.split("-").at(-1)).classList.add("cl-selected");
 
     setTimeout(() => {
         let childElement = carousel.firstElementChild;
 
         for (let i = 0; i < carousel.childElementCount; i++) {
-            childElement.classList.remove("scroll");
+            childElement.classList.remove("cl-scroll");
             childElement = childElement.nextElementSibling;
         }
         

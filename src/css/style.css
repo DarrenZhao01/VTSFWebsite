@@ -12,34 +12,34 @@ body{
     transform: translateX(-50%);
 }
 
-.overflow-hidden {
+.cl-overflow-hidden {
     overflow: hidden;
 }
 
-.subheading {
+.cl-subheading {
     font-weight: theme("fontWeight.medium") !important;
     font-size: theme("fontSize.4xl") !important;
     line-height: theme("fontSize.4xl") !important;
     margin-bottom: theme("margin.5") !important;
 }
 
-.filter-peach2 {
+.cl-filter-peach2 {
     filter: invert(46%) sepia(30%) saturate(1961%) hue-rotate(356deg) brightness(96%) contrast(92%);
 }
 
-.filter-peach3 {
+.cl-filter-peach3 {
     filter: invert(71%) sepia(29%) saturate(5661%) hue-rotate(1deg) brightness(104%) contrast(103%);
 }
 
-.filter-white {
+.cl-filter-white {
     filter: invert(98%) sepia(98%) saturate(0%) hue-rotate(33deg) brightness(103%) contrast(104%);
 }
 
-.enroll {
+.cl-enroll {
     padding: 1rem 0.5rem;
 }
 
-.session-title {
+.cl-session-title {
     font-weight: theme("fontWeight.normal") !important;
     font-size: theme("fontSize.3xl") !important;
     line-height: theme("fontSize.3xl") !important;
@@ -47,19 +47,19 @@ body{
     margin-bottom: theme("margin.2") !important;
 }
 
-.overflow-hidden {
+.cl-overflow-hidden {
     overflow: hidden;
 }
 
-.card-wrappper {
+.cl-card-wrappper {
     perspective: 100rem;
 }
 
-.card-wrapper > * {
+.cl-card-wrapper > * {
     pointer-events: none;
 }
 
-.card-wrapper .card {
+.cl-card-wrapper .cl-card {
     position: relative;
     width: 100%;
     height: 100%;
@@ -67,43 +67,43 @@ body{
     transform-style: preserve-3d;
 }
 
-.card-wrapper.flipped .card {
+.cl-card-wrapper.cl-flipped .cl-card {
     transform: rotateY(180deg);
 }
 
-.card-wrapper .card .front-card, .card-wrapper .card .back-card {
+.cl-card-wrapper .cl-card .cl-front-card, .cl-card-wrapper .cl-card .cl-back-card {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
 
-.card-wrapper .card .back-card {
+.cl-card-wrapper .cl-card .cl-back-card {
     position: absolute;
     top: 0;
     transform: rotateY(180deg);
 }
 
-.menu-dropdown {
+.cl-menu-dropdown {
     transition: width 0.5s ease;
     width: 100%;
 }
 
-.menu-dropdown.hide {
+.cl-menu-dropdown.cl-hide {
     transition: width 0.5s ease;
     width: 0%;
 }
 
-.scroll-to-top {
+.cl-scroll-to-top {
     transition: opacity 0.5s ease;
     opacity: 1;
 }
 
-.scroll-to-top.opacity-0 {
+.cl-scroll-to-top.cl-opacity-0 {
     transition: opacity 0.5s ease;
     opacity: 0;
 }
 
-.carousel-wrapper .carousel {
+.cl-carousel-wrapper .cl-carousel {
     display: flex !important;
     overflow: hidden !important;
     flex-flow: row nowrap !important;
@@ -113,7 +113,7 @@ body{
     margin-right: auto !important;
 }
 
-.carousel-wrapper .carousel > * {
+.cl-carousel-wrapper .cl-carousel > * {
     text-align: center !important;
     flex: none !important;
     object-fit: cover !important;
@@ -121,17 +121,17 @@ body{
     width: 100% !important;
 }
 
-.carousel-wrapper .bottom-icons > * {
+.cl-carousel-wrapper .cl-bottom-icons > * {
     transition: background-color 1s ease, transform 0.25s ease;
     opacity: 75%;
 }
 
-.carousel-wrapper .bottom-icons > *.selected {
+.cl-carousel-wrapper .cl-bottom-icons > *.cl-selected {
     background-color: theme("colors.peach3");
     transition: background-color 1s ease;
 }
 
-.carousel-wrapper .carousel .scroll {
+.cl-carousel-wrapper .cl-carousel .cl-scroll {
     animation-name: scrollX;
     animation-duration: 1s;
     animation-play-state: running;
@@ -140,7 +140,7 @@ body{
     animation-iteration-count: 1;
 }
 
-.carousel-wrapper .carousel .fast-scroll {
+.cl-carousel-wrapper .cl-carousel .cl-fast-scroll {
     animation-name: scrollX;
     animation-duration: 0.1s;
     animation-play-state: running;
@@ -160,40 +160,40 @@ body{
         top: -39rem;
     }
 
-    .subheading {
+    .cl-subheading {
         font-weight: theme("fontWeight.medium") !important;
         font-size: theme("fontSize.5xl") !important;
         line-height: theme("fontSize.5xl") !important;
         margin-bottom: theme("margin.5") !important;
     }
 
-    .session-title {
+    .cl-session-title {
     font-size: theme("fontSize.4xl") !important;
     line-height: theme("fontSize.4xl") !important;
     margin-top: theme("margin.3") !important;
     margin-bottom: theme("margin.2") !important;
     }
 
-    .enroll {
+    .cl-enroll {
         padding: 0.875rem;
     }
 }
 
 @media (min-width: 640px) {
-    .subheading {
+    .cl-subheading {
         font-weight: theme("fontWeight.medium") !important;
         font-size: theme("fontSize.6xl") !important;
         line-height: theme("fontSize.6xl") !important;
         margin-bottom: theme("margin.5") !important;
     }
 
-    .session-title {
+    .cl-session-title {
         font-size: theme("fontSize.5xl") !important;
         line-height: theme("fontSize.5xl") !important;
         margin-bottom: theme("margin.2") !important;
     }
 
-    .carousel-wrapper .bottom-icons > *:hover {
+    .cl-carousel-wrapper .cl-bottom-icons > *:hover {
         transition: transform 0.25s ease;
         transform: scale(1.5);
     }
