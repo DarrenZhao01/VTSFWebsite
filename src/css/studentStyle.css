@@ -87,6 +87,7 @@ body {
 
 .cl-row {
 	display: flex;
+	-ms-flex-direction: row;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
