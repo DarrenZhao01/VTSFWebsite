@@ -324,10 +324,9 @@ font-size: 2rem;
 }
 @media all and (max-width: 1024px) {
     body{
-    background: #C6FFDD;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #fa9da0, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #f7a2a5, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+        background: #C6FFDD;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #fa9da0, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #f7a2a5, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
     .cl-grid{
         display: block;
@@ -348,7 +347,6 @@ font-size: 2rem;
         margin-right: 2rem;
     }
     #arrow{
-         margin-top: 2rem;
+        margin-top: 2rem;
     }
-
 }
