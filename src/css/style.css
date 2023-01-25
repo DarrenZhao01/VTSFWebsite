@@ -199,12 +199,11 @@ body{
     width: 100%;
     display: block;
     position: relative;
-    padding-left: 8rem;
 }
 
 .cl-rb-container ul.cl-rb {
     width: 100%;
-    padding-right: 15rem;
+    padding-right: 9rem;
     display: inline-block;
 }
 
