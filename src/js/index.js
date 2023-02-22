@@ -4,3 +4,7 @@ export * from "./util/scrollToTop.js";
 import "./util/carousel.js";
 
 import "../css/style.css";
+
+// document.querySelector("#popup button").addEventListener("click", function() {
+//     document.getElementById("popup").classList.add("hidden");
+//   });
