@@ -6,6 +6,10 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+svg path {
+    stroke-width: 0.3;
+}
+
 #circle3 {
     top: -37rem;
     left: 50%;
