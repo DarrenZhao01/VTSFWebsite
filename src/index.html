@@ -38,7 +38,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;500&family=Inter:wght@500&family=Montserrat&family=Poppins:wght@500&display=swap" rel="stylesheet">
     </head>
 
-    <body class="cl-relative cl-z-1 cl-w-full cl-h-full cl-overflow-x-hidden">
+    <body class="cl-relative cl-z-1 cl-w-full cl-h-full cl-overflow-x-hidden cl-bg-amber-50">
         <!--[if lt IE 7]>
 																		<p class="browsehappy">You are using an 
 															
@@ -52,14 +52,16 @@
 																		</p>
 																		<![endif]-->
         <div>
-            <nav class="cl-absolute cl-flex cl-w-full cl-items-center cl-z-20">
+            <div class="cl-flex cl-justify-center">
+                <nav class="cl-absolute cl-flex cl-items-center cl-w-full cl-z-20 cl-mx-auto sm:cl-w-[85%] "> 
+            
                 <div class="cl-mt-3 cl-ml-3">
                     <a href="./index.html">
                         <img class="cl-w-3/5" src="./static/assets/logo.png">
                     </a>
                 </div>
                 <div class="cl-ml-auto cl-mr-4 cl-mt-3">
-                    <ul class="cl-hidden sm:cl-block cl-list-none child:cl-inline child:cl-mx-2 cl-text-xl">
+                    <ul class="cl-hidden sm:cl-block cl-list-none child:cl-inline child:cl-mx-4 cl-text-xl">
                         <li>
                             <a href="./index.html">
                                 <span class="cl-active cl-border-b-2 cl-border-[#ffd8b7]">Home</span>
@@ -119,7 +121,7 @@
                         </div>
                     </div>
 
-                    <div class="cl-menu-dropdown cl-hide cl-absolute cl-top-0 cl-right-0 cl-w-screen cl-h-screen cl-bg-[#f1c590] cl-z-50">
+                    <div class="cl-menu-dropdown cl-hide cl-absolute cl-top-0 cl-right-0 cl-w-screen cl-h-screen cl-bg-[#f1c590] cl-z-50 sm:cl-hidden ">
                         <div class="cl-text-center cl-my-3 cl-mt-64">
                             <h2 class="cl-text-5xl cl-mb-6 cl-font-bold">Menu</h2>
                             <ul class="cl-text-2xl child:cl-my-3">
@@ -160,20 +162,40 @@
                     </div>
                 </div>
             </nav>
+        </div>
             <main>
                 <div>
-                    <div class="cl-block cl-relative sm:cl-flex cl-mx-auto cl-pt-32 cl-w-full sm:cl-w-3/4 cl-flex-wrap cl-items-center sm:cl-pt-48">
+                    <div class="cl-block cl-relative sm:cl-flex cl-mx-auto cl-pt-32 cl-w-full sm:cl-w-[80%] cl-flex-wrap  sm:cl-pt-48">
                         <div class="cl-w-full sm:cl-w-1/2 cl-text-center sm:cl-text-left cl-text-peach2">
-                            <h1 class="sm:cl-text-[6rem] cl-text-7xl cl-font-semibold -cl-mx-full sm:cl-mx-0">Welcome.</h1>
-                            <div class="sm:cl-text-5xl cl-text-4xl cl-mx-2 sm:cl-mx-0">
-                                <br>Free online tutoring <br class="inline sm:block"> for students by <br class="inline sm:block"> students.
+                            <h1 class="sm:cl-text-[2rem] cl-text-3xl cl-font-semibold sm:cl-mx-0 cl-mx-2">Virtual Tutoring SF presents</h1>
+                            <div class="sm:cl-text-6xl cl-text-5xl sm:cl-leading-[5rem] cl-mx-2 sm:cl-mx-0 cl-text-black cl-font-semibold">
+                                <br><mark>Free</mark> online tutoring <br class="inline sm:block"> for students by <br class="inline sm:block"> students.
+                            </div>
+                            <div class="cl-hidden sm:cl-block cl-w-1/2 cl-justify-start sm:cl-w-full">
+                                <div class="cl-flex cl-w-full sm:cl-w-[full] sm:cl-items-start cl-mt-16">
+                                    <div class="cl-ml-auto sm:cl-ml-0 sm:cl-mr-20">
+                                        <button class="cl-enroll sm:cl-px-10 sm:cl-py-5 cl-bg-amber-700 cl-text-white cl-rounded-3xl cl-font-medium" onclick="window.location.href='./students.html'">Enroll as Student</button>
+                                    </div>
+                                    <div class="cl-ml-auto sm:cl-ml-0">
+                                        <button class="cl-enroll sm:cl-px-10 sm:cl-py-5 cl-bg-opacity-0 cl-text-amber-700 cl-rounded-3xl cl-font-medium cl-border-2 cl-border-amber-700" onclick="window.location.href='./tutors.html'">Become a Tutor</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="cl-hidden sm:cl-block cl-w-1/2 cl-content-center">
-                            <img class="cl-mx-auto" src="./static/assets/home-image.svg" onerror="this.src=''">
+                            <img class="cl-ml-auto sm:cl-h-[500px]" src="./static/assets/home-image.svg" onerror="this.src=''">
                         </div>
-                        <div class="cl-hidden sm:cl-block cl-w-1/2"></div>
-                        <div class="cl-flex cl-w-full sm:cl-w-1/2 cl-mt-10 child:child:cl-bg-red1 child:child:cl-text-white child:child:cl-rounded-full">
+                        <!-- <div class="cl-hidden sm:cl-block cl-w-1/2 cl-justify-start">
+                            <div class="cl-flex cl-w-full sm:cl-w-[full] sm:cl-items-start cl-mt-10 child:child:cl-bg-amber-700 child:child:cl-text-white child:child:cl-rounded-3xl child:child:cl-font-medium">
+                                <div class="cl-ml-auto sm:cl-ml-0 sm:cl-mr-32">
+                                    <button class="cl-enroll sm:cl-px-10 sm:cl-py-5" onclick="window.location.href='./students.html'">Enroll as Student</button>
+                                </div>
+                                <div class="cl-ml-auto sm:cl-ml-0">
+                                    <button class="cl-enroll sm:cl-px-10 sm:cl-py-5" onclick="window.location.href='./tutors.html'">Enroll as Tutor</button>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="sm:cl-hidden cl-flex cl-w-full sm:cl-w-1/2 cl-mt-10 child:child:cl-bg-peach2 child:child:cl-text-white child:child:cl-rounded-full">
                             <div class="cl-mr-auto cl-ml-auto">
                                 <button class="cl-enroll sm:cl-px-6 sm:cl-py-5" onclick="window.location.href='./students.html'">Enroll as Student</button>
                             </div>
@@ -182,21 +204,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cl-flex cl-flex-col cl-mx-auto cl-w-9/12 sm:cl-bg-peach1 sm:cl-mt-96 sm:cl-w-[80%] sm:cl-px-14 sm:cl-py-8 sm:cl-rounded-[2rem]">
+                        
+                    </div>
+                    <div class="cl-flex cl-flex-col cl-mx-auto cl-w-9/12 sm:cl-bg-peach1 sm:cl-mt-60 sm:cl-w-[80%] sm:cl-px-14 sm:cl-py-8 sm:cl-rounded-[2rem]">
                         <h2 class="sm:cl-block cl-hidden cl-text-5xl cl-font-extrabold cl-text-center">Annoucements</h2>
                     </div>
                     <div class="cl-block sm:cl-flex cl-text-center sm:cl-text-left cl-mx-auto sm:cl-my-16 cl-my-32 cl-w-9/12 child:cl-mx-0 child:sm:cl-mx-4">
                         <div class="cl-hidden sm:cl-flex cl-w-1/2 cl-flex-col cl-h-full cl-my-auto">
-                            <h2 class="sm:cl-font-[500] cl-font-medium cl-text-5xl sm:cl-text-6xl cl-mb-6 cl-text-left cl-text-yellow-500">Summer Session!</h2>
-                            <p class="cl-text-[1.5rem]">The summer semester is focused on preparing students for their next year classes. Tutors will be working with a small group of students to accelerate their learning in the respective subject, giving students a head start.</p>
+                            <h2 class="sm:cl-font-[500] cl-font-medium cl-text-5xl sm:cl-text-6xl cl-mb-6 cl-text-left cl-text-orange-900">Fall Session!</h2>
+                            <p class="cl-text-[1.5rem]">The fall semester is focused on having students stay on track with their classes. Tutors will be working with a small group of students to reinforce their learning in the respective subject, giving students a solid school year.</p>
                         </div>
                         <div class="cl-w-full sm:cl-w-1/2 cl-flex cl-flex-col cl-items-center">
                             <div class="cl-flex sm:cl-hidden cl-w-full cl-flex-col cl-h-full cl-my-auto">
-                                <h2 class="cl-self-center cl-font-medium cl-text-5xl cl-mt-3 cl-mb-4 cl-text-green1">Summer Session!</h2>
-                                <p class="cl-mb-4 sm:cl-text-2xl">The summer semester is focused on preparing students for their next year classes. Tutors will be working with a small group of students to accelerate their learning in the respective subject, giving students a head start.</p>
+                                <h2 class="cl-self-center cl-font-medium cl-text-5xl cl-mt-3 cl-mb-4 cl-text-orange-900">Fall Session!</h2>
+                                <p class="cl-mb-4 sm:cl-text-2xl">The fall semester is focused on having students stay on track with their classes. Tutors will be working with a small group of students to reinforce their learning in the respective subject, giving students a solid school year.</p>
                             </div>
                             <div>
-                                <img class="cl-w-30rem" src="./static/assets/summerVTSFTutors.png">
+                                <img class="cl-w-30rem" src="./static/assets/f23tutor.png">
                             </div>
                         </div>
                     </div>
@@ -319,6 +343,10 @@
                                 <h3 class="cl-select-none">●</h3>
                                 <p>"My daughter had a great time interacting with her teacher. My daughter felt that it was challenging yet fun at the same time. This practice over the summer has really helped her feel more confident entering her fall school year."</p>
                             </div>
+                            <div>
+                                <h3 class="cl-select-none">●</h3>
+                                <p> "My daughter is really poor in math, this tutoring you guys have provided is very helpful for her. Thank you!"</p>
+                            </div>
                         </div>
                     </div>
                     <div class="cl-carousel-wrapper cl-relative">
@@ -374,11 +402,11 @@
             </footer>
         </div>
         <div>
-            <div class="cl-hidden sm:cl-block -cl-z-10 cl-w-fit cl-h-fit cl-absolute -cl-top-30rem sm:-cl-top-40rem -cl-left-40rem">
+            <!-- <div class="cl-hidden sm:cl-block -cl-z-10 cl-w-fit cl-h-fit cl-absolute -cl-top-30rem sm:-cl-top-40rem -cl-left-40rem">
                 <div class="cl-rounded-full cl-w-1500px cl-aspect-square cl-bg-peach1"></div>
-            </div>
-            <div id="circle3" class="cl-block sm:cl-hidden -cl-z-10 cl-w-[1120px] cl-h-fit cl-absolute -cl-top-[35rem] cl-left-[50%] -cl-translate-x-[50%]">
-                <div class="cl-rounded-full cl-w-[70rem] cl-aspect-square cl-bg-peach1"></div>
+            </div> -->
+            <div id="circle3" class="cl-block sm:cl-hidden -cl-z-10 cl-w-[1250px] cl-h-fit cl-absolute cl-left-[50%] -cl-translate-x-[50%]">
+                <div class="cl-rounded-full cl-w-[78rem] cl-aspect-square cl-bg-peach1"></div>
             </div>
         </div>
         <div class="cl-fixed cl-bottom-3 cl-right-3">
