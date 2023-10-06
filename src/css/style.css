@@ -313,7 +313,7 @@ a.cl-slide__prev,
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   left: 5%;
-  top: 52.5%
+  top: 50%
 }
 
 a.cl-slide__next,
@@ -321,7 +321,7 @@ a.cl-slide__next,
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   right: 5%;
-  top: 52.5%
+  top: 50%
 }
 
 .cl-slider::before,
@@ -380,7 +380,7 @@ a.cl-slide__next,
 
 .cl-box{
   display:block;
-  background-color:rgb(255, 235, 209);
+  background-color:#ffd8b7;
   width: 30vw;
   height: 100%;
   padding: 20%;
