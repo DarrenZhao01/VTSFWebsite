@@ -10,6 +10,21 @@ svg path {
     stroke-width: 0.3;
 }
 
+.cl-about-us{
+    position: absolute;
+    margin: auto;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 1.3rem;
+    margin-bottom: 5rem;
+}
+
+
+
 #circle3 {
     top: -37rem;
     left: 50%;
