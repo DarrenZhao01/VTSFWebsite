@@ -322,6 +322,32 @@ font-size: 2rem;
 .cl-grid{
     display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); grid-row-gap: 12rem; margin: auto; margin-bottom: 7rem; margin-top: 10rem; padding-left: 6rem; padding-right: 6rem;
 }
+.cl-retired-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 12rem;
+    margin: auto;
+    margin-bottom: 7rem;
+    margin-top: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.cl-retired-line{
+    border-width: 3px;
+    margin: 0 9.2rem 0 9.2rem;
+    background: linear-gradient(to right, #c35252, #e59494, #efe7e7);
+}
+
+.cl-retired-header{
+    font-size: 2.5rem;
+    margin-left: 9.2rem;
+}
+
+.cl-retired-div{
+    margin-top: 1.3rem;
+}
 @media all and (max-width: 1024px) {
     body{
         background: #C6FFDD;  /* fallback for old browsers */
@@ -348,5 +374,16 @@ font-size: 2rem;
     }
     #arrow{
         margin-top: 2rem;
+    }
+    .cl-retired-header{
+        margin: auto
+    }
+    .cl-retired-div{
+        display: flex;
+        align-items: center;
+    }
+    .cl-retired-grid{
+        display: block;
+        padding: 0;
     }
 }
