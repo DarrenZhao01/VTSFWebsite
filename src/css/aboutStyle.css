@@ -158,7 +158,7 @@ font-size: 2rem;
     border-radius: 20px;
     border: orange solid 1px;
     background-color: #e9ab38;
-    box-shadow: 0 15px 35px rgb(105 105 105 / 20%);
+    box-shadow: 0 15px 35px rgba(252, 140, 13, 0.5);
     margin: 15px;
 }
 
@@ -211,7 +211,7 @@ font-size: 2rem;
     background-color: #e9ab38;
     padding: 1.5em 0.5em 0.5em;
     text-align: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 30px rgba(196, 131, 9, 0.842);
 }
 .cl-front-card img {
     width: 65%;
@@ -229,6 +229,7 @@ font-size: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #e9ab38;
+    box-shadow: 0px 10px 30px rgba(196, 131, 9, 0.842);
 }
 .cl-card-title {
     font-weight: 700;
