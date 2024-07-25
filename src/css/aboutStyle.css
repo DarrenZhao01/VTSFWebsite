@@ -3,6 +3,68 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+/* Tooltip container */
+.cl-tooltip {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 2.5rem;
+    /* margin-left: 9.2rem; */
+    /* If you want dots under the hoverable text */
+}
+.cl-border-b{
+    border-bottom: 1.5px dotted rgb(85, 71, 23);
+}
+
+/* Tooltip text */
+.cl-tooltip .cl-tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: normal;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -145px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.cl-tooltip .cl-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.cl-tooltip:hover .cl-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* .cl-question{
+    position: absolute;
+        top: -5px;
+        right: -15px;
+    font-weight: normal;
+    font-size: 20px;
+} */
+
 .cl-aboutUs {
     padding-top: 10%;
     margin: auto;
@@ -16,10 +78,12 @@ body {
     text-align: center;
     font-size: 1.8rem;
 }
+
 #arrow {
     margin: auto;
     margin-top: 8rem;
 }
+
 /* .cl-showcase {
     background-image: url("https://virtualtutoringsf.org/vtIMG/Top.png");
     background-attachment: fixed;
@@ -158,7 +222,7 @@ font-size: 2rem;
     border-radius: 20px;
     border: orange solid 1px;
     background-color: #e9ab38;
-    box-shadow: 0 15px 35px rgb(105 105 105 / 20%);
+    box-shadow: 0 15px 35px rgba(252, 140, 13, 0.5);
     margin: 15px;
 }
 
@@ -171,6 +235,7 @@ font-size: 2rem;
     margin: 30px auto;
     object-fit: cover;
 }
+
 /* .cl-front-card {
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
@@ -205,14 +270,15 @@ font-size: 2rem;
 } */
 
 .cl-front-card {
-    max-width: 18rem; 
-    max-height: 500px; 
-    border-radius: 20px; 
+    max-width: 18rem;
+    max-height: 500px;
+    border-radius: 20px;
     background-color: #e9ab38;
     padding: 1.5em 0.5em 0.5em;
     text-align: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px rgba(196, 131, 9, 0.842);
 }
+
 .cl-front-card img {
     width: 65%;
     border-radius: 50%;
@@ -220,7 +286,7 @@ font-size: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.cl-back-card{
+.cl-back-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,11 +295,14 @@ font-size: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #e9ab38;
+    box-shadow: 0px 5px 10px rgba(196, 131, 9, 0.842);
 }
+
 .cl-card-title {
     font-weight: 700;
     font-size: 1.5em;
 }
+
 /* .cl-front-card .cl-btn {
     border-radius: 2em;
     background-color: teal;
@@ -289,25 +358,28 @@ font-size: 2rem;
     width: 50%;
     height: auto;
 }
-.cl-app{
+
+.cl-app {
     margin: auto;
 }
 
-.cl-expand{
+.cl-expand {
     margin: auto;
     margin-top: 1.5rem;
     margin-bottom: 24px;
 }
 
-.cl-cardRow{
+.cl-cardRow {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #popup {
-    display: none; /* Hide the pop-up by default */
-    position: fixed; /* Position the pop-up in the center of the screen */
+    display: none;
+    /* Hide the pop-up by default */
+    position: fixed;
+    /* Position the pop-up in the center of the screen */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -319,34 +391,94 @@ font-size: 2rem;
 #popup-trigger {
     cursor: pointer;
 }
-.cl-grid{
-    display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); grid-row-gap: 12rem; margin: auto; margin-bottom: 7rem; margin-top: 10rem; padding-left: 6rem; padding-right: 6rem;
+
+.cl-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 12rem;
+    margin: auto;
+    margin-bottom: 7rem;
+    margin-top: 10rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
+
+.cl-retired-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 12rem;
+    margin: auto;
+    margin-bottom: 7rem;
+    margin-top: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.cl-retired-line {
+    border-width: 3px;
+    margin: 0 9.2rem 0 9.2rem;
+    background: linear-gradient(to right, #c35252, #e59494, #efe7e7);
+}
+
+.cl-retired-header {
+    font-size: 2.5rem;
+    margin-left: 9.2rem;
+}
+
+.cl-retired-div {
+    margin-top: 1.3rem;
+}
+
 @media all and (max-width: 1024px) {
-    body{
-        background: #C6FFDD;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #fa9da0, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #f7a2a5, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    body {
+        background: #C6FFDD;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #fa9da0, #FBD786, #C6FFDD);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #f7a2a5, #FBD786, #C6FFDD);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
-    .cl-grid{
+
+    .cl-grid {
         display: block;
         margin-top: 4rem;
         padding: 0;
     }
-    .cl-card{
+
+    .cl-card {
         margin-bottom: 3rem;
     }
-    #wave{
+
+    #wave {
         display: none;
     }
-    h1{
+
+    h1 {
         margin-top: 6rem;
     }
-    .cl-about-description{
+
+    .cl-about-description {
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    #arrow{
+
+    #arrow {
         margin-top: 2rem;
+    }
+
+    .cl-retired-header {
+        margin: auto
+    }
+
+    .cl-retired-div {
+        display: flex;
+        align-items: center;
+    }
+
+    .cl-retired-grid {
+        display: block;
+        padding: 0;
     }
 }

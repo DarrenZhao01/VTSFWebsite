@@ -222,6 +222,7 @@ font-size:30px;
 height: auto;
 }
 .cl-header-extend{
+<<<<<<< HEAD
 display: flex;
 justify-content: center;
 align-items: center;
@@ -235,6 +236,22 @@ font-size: 1.6em;
 background-color:rgb(43, 146, 43);
 border-radius: 10px;
 color: white;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 4vh;
+  margin-bottom: 6vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px 10px 20px;
+  font-size: 1.6em;
+  /* background-color:rgb(43, 146, 43); */
+  background-color: rgb(146, 43, 43);
+  border-radius: 10px;
+  color: white;
+>>>>>>> master
 }
 .cl-class-desc{
 font-size: 1.3em;

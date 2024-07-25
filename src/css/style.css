@@ -2,12 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: 'Inter', sans-serif;
+body {
+    font-family: "Inter", sans-serif;
 }
 
 svg path {
     stroke-width: 0.3;
+}
+
+.cl-about-us {
+    position: absolute;
+    margin: auto;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px 30px 30px 30px;
+    border-radius: 1.3rem;
+}
+
+.animate-character {
+    background-image: repeating-linear-gradient(270deg,
+            #d4b00f 0%,
+            #bd8647 50%,
+            #d4b00f 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 #circle3 {
@@ -63,7 +98,7 @@ svg path {
     perspective: 100rem;
 }
 
-.cl-card-wrapper > * {
+.cl-card-wrapper>* {
     pointer-events: none;
 }
 
@@ -79,7 +114,8 @@ svg path {
     transform: rotateY(180deg);
 }
 
-.cl-card-wrapper .cl-card .cl-front-card, .cl-card-wrapper .cl-card .cl-back-card {
+.cl-card-wrapper .cl-card .cl-front-card,
+.cl-card-wrapper .cl-card .cl-back-card {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -116,12 +152,12 @@ svg path {
     overflow: hidden !important;
     flex-flow: row nowrap !important;
     scroll-snap-type: x mandatory !important;
-    align-items: center !important; 
+    align-items: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
-.cl-carousel-wrapper .cl-carousel > * {
+.cl-carousel-wrapper .cl-carousel>* {
     text-align: center !important;
     flex: none !important;
     object-fit: cover !important;
@@ -129,12 +165,12 @@ svg path {
     width: 100% !important;
 }
 
-.cl-carousel-wrapper .cl-bottom-icons > * {
+.cl-carousel-wrapper .cl-bottom-icons>* {
     transition: background-color 1s ease, transform 0.25s ease;
     opacity: 75%;
 }
 
-.cl-carousel-wrapper .cl-bottom-icons > *.cl-selected {
+.cl-carousel-wrapper .cl-bottom-icons>*.cl-selected {
     background-color: theme("colors.peach3");
     transition: background-color 1s ease;
 }
@@ -176,10 +212,10 @@ svg path {
     }
 
     .cl-session-title {
-    font-size: theme("fontSize.4xl") !important;
-    line-height: theme("fontSize.4xl") !important;
-    margin-top: theme("margin.3") !important;
-    margin-bottom: theme("margin.2") !important;
+        font-size: theme("fontSize.4xl") !important;
+        line-height: theme("fontSize.4xl") !important;
+        margin-top: theme("margin.3") !important;
+        margin-bottom: theme("margin.2") !important;
     }
 
     .cl-enroll {
@@ -255,6 +291,166 @@ ul.cl-rb li .cl-timestamp {
     color: black;
 }
 
+.cl-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cl-slider {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cl-slides {
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.cl-slide:nth-of-type(even) {}
+
+.cl-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    scroll-snap-align: center;
+    margin-right: 0px;
+    box-sizing: border-box;
+    transform-origin: center center;
+    transform: scale(1);
+    margin-right: 20%;
+}
+
+.cl-slide__text {}
+
+.cl-slide a {
+    background: none;
+    border: none;
+}
+
+a.cl-slide__prev,
+.cl-slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+    top: 50%;
+}
+
+a.cl-slide__next,
+.cl-slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+    top: 50%;
+}
+
+.cl-slider::before,
+.cl-slider::after,
+.cl-slide__prev,
+.cl-slide__next {
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.cl-slider::before,
+.cl-slider::after {
+    content: "";
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+}
+
+.cl-slider__nav {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+}
+
+.cl-slider__navlink {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 10px 0 10px;
+}
+
+#m1,
+#m2,
+#m3 {
+    max-width: 13vh;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+#m4,
+#m5 {
+    max-width: 7vh;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.cl-box {
+    display: block;
+    background-color: #ffd8b7;
+    width: 30vw;
+    height: 100%;
+    padding: 20%;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-family: "Inter", sans-serif;
+}
+
+.cl-h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.cl-class-title {
+    font-size: 30px;
+    height: auto;
+}
+
+.cl-header-extend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.6em;
+    background-color: rgb(43, 146, 43);
+    border-radius: 10px;
+    color: white;
+}
 
 @media (min-width: 640px) {
     .cl-subheading {
@@ -270,7 +466,7 @@ ul.cl-rb li .cl-timestamp {
         margin-bottom: theme("margin.2") !important;
     }
 
-    .cl-carousel-wrapper .cl-bottom-icons > *:hover {
+    .cl-carousel-wrapper .cl-bottom-icons>*:hover {
         transition: transform 0.25s ease;
         transform: scale(1.5);
     }
