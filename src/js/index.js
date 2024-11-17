@@ -1,6 +1,7 @@
 export * from "./util/menuDropdown.js";
 export * from "./util/scrollToTop.js";
 export * from "./util/popup";
+export * from "./util/anchorClickBehavior.js"
 
 import "./util/carousel.js";
 
