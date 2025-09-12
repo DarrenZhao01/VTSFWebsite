@@ -395,7 +395,7 @@ font-size: 2rem;
 .cl-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-row-gap: 12rem;
     margin: auto;
     margin-bottom: 7rem;
@@ -407,7 +407,7 @@ font-size: 2rem;
 .cl-retired-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 12rem;
     margin: auto;
     margin-bottom: 7rem;
