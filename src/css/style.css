@@ -94,7 +94,7 @@ svg path {
     overflow: hidden;
 }
 
-.cl-card-wrappper {
+.cl-card-wrapper {
     perspective: 100rem;
 }
 
@@ -130,11 +130,14 @@ svg path {
 .cl-menu-dropdown {
     transition: width 0.5s ease;
     width: 100%;
+    overflow: hidden;
 }
 
 .cl-menu-dropdown.cl-hide {
     transition: width 0.5s ease;
     width: 0%;
+    overflow: hidden;
+    pointer-events: none;
 }
 
 .cl-scroll-to-top {
@@ -311,10 +314,15 @@ ul.cl-rb li .cl-timestamp {
 
 .cl-slides {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: auto;
     position: relative;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.cl-slides::-webkit-scrollbar {
+    display: none;
 }
 
 .cl-slide:nth-of-type(even) {}

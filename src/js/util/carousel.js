@@ -52,16 +52,26 @@ function startCarousels() {
 }
 
 async function carouselScroll(carousel) {
+    if (carousel.childElementCount < 2) {
+        return;
+    }
+
     let childElement = carousel.firstElementChild;
 
     for (let i = 0; i < carousel.childElementCount; i++) {
-
         childElement.classList.add("cl-scroll");
         childElement = childElement.nextElementSibling;
     }
 
-    document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.id.split("-").at(-1)).classList.remove("cl-selected");
-    document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.nextElementSibling.id.split("-").at(-1)).classList.add("cl-selected");
+    const currentIcon = document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.id.split("-").at(-1));
+    const nextIcon = document.getElementById("carousel-item-bottom-icon-" + carousel.firstElementChild.nextElementSibling.id.split("-").at(-1));
+
+    if (currentIcon) {
+        currentIcon.classList.remove("cl-selected");
+    }
+    if (nextIcon) {
+        nextIcon.classList.add("cl-selected");
+    }
 
     setTimeout(() => {
         let childElement = carousel.firstElementChild;
@@ -70,7 +80,7 @@ async function carouselScroll(carousel) {
             childElement.classList.remove("cl-scroll");
             childElement = childElement.nextElementSibling;
         }
-        
+
         carousel.appendChild(carousel.removeChild(carousel.firstElementChild));
         setTimeout(() => {
             carouselScroll(carousel);
