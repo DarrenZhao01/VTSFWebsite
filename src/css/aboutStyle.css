@@ -270,8 +270,8 @@ font-size: 2rem;
 } */
 
 .cl-front-card {
-    max-width: 18rem;
-    max-height: 500px;
+    max-width: 320px;   /* was 18rem / 288px */
+    max-height: 650px;
     border-radius: 20px;
     background-color: #e9ab38;
     padding: 1.5em 0.5em 0.5em;

@@ -96,6 +96,8 @@ svg path {
 
 .cl-card-wrapper {
     perspective: 100rem;
+    height: 480px;   /* reduced from 620px */
+    width: 320px;    /* new — gives it real width */
 }
 
 .cl-card-wrapper>* {
